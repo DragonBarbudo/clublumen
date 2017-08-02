@@ -1,0 +1,107 @@
+@import 'lib/_lesshat';
+
+@b: #333;
+@w: #fff;
+@blue: #00ADE0;
+@yellow: #FCB829;
+@red : #ED1C2F;
+@darkblue: #0053A1;
+@green: #98C93A;
+
+.fontR{ font-family: 'Roboto', sans-serif; }
+.fontC{ font-family: 'Roboto Condensed', sans-serif; }
+.fontS{ font-family: 'Roboto Slab', serif; }
+
+body{
+  .fontR;
+}
+
+
+h1, h2, h3, h4{
+  .fontS;
+  color:@darkblue;
+}
+
+
+.banner{display: block; margin-bottom: 10px;}
+
+#mainMenu, #mainMenuResponsive{
+  background: @blue;
+  padding: 0;
+  ul{
+    background: transparent;
+    li{
+      a{
+        color:@w;
+        .fontC;
+        &.is-active{
+         border-bottom: 1px solid @darkblue;
+        }
+      }
+    }
+  }
+  
+}
+#mainMenuResponsive{
+  width: 100%;
+  .title-bar-title{
+    text-align: center;
+  }
+}
+
+a.logo{
+  padding: 0 0 0 10px;
+  
+}
+.logo-img{
+    margin: 0 auto;
+    max-width: 180px;
+}
+
+.loginform{
+  .background-image(linear-gradient(right, @darkblue, @blue));
+  padding: 10px;
+  margin: 0;
+  input, input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: 0.8em;
+    padding: 6px;
+    height: auto;
+    max-width: 100px;
+    margin: 0;
+    background:@w;
+    color:@darkblue !important;
+    -webkit-text-fill-color: @darkblue !important;
+    .fontR;
+    border-color:@darkblue;
+    &:focus{
+      background:@blue;
+    }
+  }
+  .help-text{
+    color:@w;
+    .fontC;
+    font-size: 0.8em;
+  }
+  .button.hollow{
+    border-color: @w;
+    color:@w;
+    &:hover{
+      background: @w;
+      color:@darkblue;
+    }
+  }
+}
+
+
+
+.clublumen{
+  padding: 80px 0;
+}
+
+#mainContainer{
+  padding: 80px 0 ;
+}

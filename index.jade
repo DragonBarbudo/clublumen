@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+html(lang="en").no-js
+  head
+    meta(charset="UTF-8")
+    title ..:: Club Lumen ::..
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    
+    link(rel="stylesheet", href="site/lib/foundation.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed|Roboto+Slab")
+    link(rel="stylesheet", href="site/style.css")
+    link(rel="icon" type="image/png" href="favicon.png")
+  body
+
+    div(data-sticky-container)
+      div(data-sticky data-margin-top="0")
+        .title-bar(data-responsive-toggle="mainMenu", data-hide-for="large")#mainMenuResponsive
+          button.menu-icon(type="button" data-toggle="mainMenu")
+          .title-bar-title: img(src="site/img/club-lumen.png").logo-img
+        .top-bar.stacked-for-large#mainMenu
+            .top-bar-left
+              ul.menu(data-magellan data-smooth-scroll data-offset="100")
+                li.hide-for-medium-only: a(href="#inicio").logo: img(src="site/img/club-lumen.png").logo-img
+                li: a(href="#que-es") ¿Qué es?
+                li: a(href="#activacion") Activación
+                li: a(href="#promociones") Promociones
+                li: a(href="#comprar-puntos") Comprar puntos
+                li: a(href="#certificado-de-regalo") Certificado de regalo
+                li: a(href="#contacto") Contacto
+            .top-bar-right.loginform
+              form(action="#")
+                ul.menu
+                  li: input(type="text" placeholder="Usuario")
+                  li
+                    input(type="password" placeholder="Contraseña")
+                  li: button(type="submit").button.tiny.hollow: i.fi-check
+                a(href="#").help-text ¿Olvidaste tu usuario o contraseña?
+        
+    .oribt(role="region" data-orbit)#inicio
+      ul.orbit-container 
+        button.orbit-previous &#9664;&#xFE0E;
+        button.orbit-next &#9654;&#xFE0E;
+
+        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-1.png").oribt-image
+        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-2.png").oribt-image
+        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-3.png").oribt-image
+
+
+    .grid-container(data-magellan-target="que-es")#que-es
+      .cell
+        .clublumen.text-center: img(src="site/img/club-lumen.png" alt="Club Lúmen")
+    .grid-container.intro
+      .grid-x.grid-margin-x
+        .cell.small-6
+          .card
+            .card-section: h2 ¿Qué es?
+            img(src="site/img/quees.png")
+            .card-section
+              p Para lumen lo más importante son sus clientes, es por eso que con el afán de seguir promoviendo tus ganas de crear y materializar tus ideas hemos creado Club Lumen, el Programa de Lealtad diseñado especialmente para ti con el objetivo de brindarte beneficios para que sigas desarrollando tu creatividad.
+            .card-section: a(data-toggle="quees-info").button.hollow Ver más
+            .card-section(data-toggler=".hide")#quees-info.hide
+              p En Club Lumen podrás acumular Puntos Lumen por todas las compras de productos y servicios participantes que realices en cualquiera de nuestras sucursales y utilizarlos como forma de pago; además de participar en Promociones Especiales. 
+              p En Club Lumen® el punto es crear. 
+        .cell.small-6
+          .card
+            .card-section: h2 ¿Cómo funciona?
+            img(src="site/img/comofunciona.png")
+            .card-section
+              p 1. Adquiere tu Tarjeta Club Lumen por $200.00 pesos en cualquiera de nuestras sucursales.
+              p 2. Registra tus datos en este sitio de internet o llamando a los teléfonos 01-800-841-7500 o 8164-7300.
+              p 3. Acumula Puntos Lumen por todas las compras que realices en nuestras sucursales.
+              p 4. Utiliza tus Puntos Lumen como forma de pago parcial o total en todas las compras que realices en tiendas lumen.
+            .card-section: a(data-toggle="comofunciona-info").button.hollow Ver más
+            .card-section(data-toggler=".hide")#comofunciona-info.hide
+              p También podrás comprar Puntos Club Lumen en este sitio de internet o por medio de nuestro Centro de Atención a Clientes, utilizando tu tarjeta de crédito y acumularlos en tu tarjeta o en alguna otra Tarjeta Club Lumen que desees. 
+              p La vigencia de los Puntos Lumen® es de 12 meses de acuerdo al mes en el que fue realizada la Acumulación de los Puntos.
+              p Para mayor información consulta la sección de Términos y Condiciones y Aviso de Privacidad.
+
+
+
+    .grid-container#mainContainer
+      .grid-x.grid-margin-x
+
+        .cell.small-9
+          .grid-x.grid-margin-x(data-magellan-target="activacion")#activacion
+            .cell
+              h2 Activación
+            .cell.small-6
+              p En esta sección podrás registrar tu Tarjeta Club Lumen® y tus datos personales para que puedas utilizar los Puntos Lumen® acumulados en tu cuenta como forma de pago en nuestras sucursales.
+              p Recuerda que no podrás hacer uso de tus Puntos Lumen® si tu Tarjeta no está registrada.
+              p Además, si registras tu Tarjeta Club Lumen® podrás Acumular tus Puntos aunque no lleves tu tarjeta contigo proporcionando tu nombre de Usuario y los últimos 4 números de tu teléfono registrados.
+            .cell.small-6
+              form
+                label Ingresa los 16 números de la Tarjeta Club Lumen:
+                
+              
+                .input-group
+                  input.input-group-field(type="number")
+                  .input-group-button
+                    button(type="submit").button Validar tarjeta
+                a.button.small(data-toggle="numerostarjeta-info"): i.fi-info
+                span#numerostarjeta-info.hide(data-toggler=".hide")
+                  img(src="site/img/numeros-tarjeta.png")
+
+          hr
+          .grid-x.grid-margin-x(data-magellan-target="promociones")#promociones
+            .cell
+              h2 Promociones
+          hr
+          .grid-x.grid-margin-x(data-magellan-target="comprar-puntos")#comprar-puntos
+            .cell
+              h2 Comprar puntos
+          hr
+          .grid-x.grid-margin-x(data-magellan-target="certificado-de-regalo")#certificado-de-regalo
+            .cell
+              h2 Certificado de regalo
+          hr
+          .grid-x.grid-margin-x(data-magellan-target="contacto")#contacto
+            .cell
+              h2 Contacto
+
+
+
+
+        .cell.small-3
+          div(data-sticky-container)
+            div(data-sticky data-anchor="mainContainer" data-margin-top="6").sticky
+              a(href="#").banner: img(src="site/img/banner-1.jpg")
+              a(href="#").banner: img(src="site/img/banner-2.jpg")
+              a(href="#").banner: img(src="site/img/banner-3.jpg")
+
+
+    footer
+      .top-bar
+        .top-bar-left
+          ul.menu
+            li.menu-text COPYRIGHT © 2017
+            li: a(href="#") Términos y condiciones
+            li: a(href="#") Preguntas frecuentes
+            li: a(href="#") Reporte por robo o extravío
+            li: a(href="#") Aviso de Privacidad
+        .top-bar-right
+          ul.menu
+            li: a(href="#"): img(src="site/img/poweredbyblue.png")
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="site/lib/what-input.js")
+    script(src="site/lib/foundation.min.js")
+    script(src="site/script.js")

@@ -1,0 +1,107 @@
+.fontR {
+  font-family: 'Roboto', sans-serif;
+}
+.fontC {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.fontS {
+  font-family: 'Roboto Slab', serif;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Slab', serif;
+  color: #0053A1;
+}
+.banner {
+  display: block;
+  margin-bottom: 10px;
+}
+#mainMenu,
+#mainMenuResponsive {
+  background: #00ADE0;
+  padding: 0;
+}
+#mainMenu ul,
+#mainMenuResponsive ul {
+  background: transparent;
+}
+#mainMenu ul li a,
+#mainMenuResponsive ul li a {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#mainMenu ul li a.is-active,
+#mainMenuResponsive ul li a.is-active {
+  border-bottom: 1px solid #0053A1;
+}
+#mainMenuResponsive {
+  width: 100%;
+}
+#mainMenuResponsive .title-bar-title {
+  text-align: center;
+}
+a.logo {
+  padding: 0 0 0 10px;
+}
+.logo-img {
+  margin: 0 auto;
+  max-width: 180px;
+}
+.loginform {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDUzQTEiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwQURFMCIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(right, #0053A1, #00ADE0);
+  background-image: -moz-linear-gradient(right, #0053A1, #00ADE0);
+  background-image: -o-linear-gradient(right, #0053A1, #00ADE0);
+  background-image: linear-gradient(to left, #0053A1, #00ADE0);
+  padding: 10px;
+  margin: 0;
+}
+.loginform input,
+.loginform input:-webkit-autofill,
+.loginform input:-webkit-autofill:hover,
+.loginform input:-webkit-autofill:focus,
+.loginform input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  font-size: 0.8em;
+  padding: 6px;
+  height: auto;
+  max-width: 100px;
+  margin: 0;
+  background: #fff;
+  color: #0053A1 !important;
+  -webkit-text-fill-color: #0053A1 !important;
+  font-family: 'Roboto', sans-serif;
+  border-color: #0053A1;
+}
+.loginform input:focus,
+.loginform input:-webkit-autofill:focus,
+.loginform input:-webkit-autofill:hover:focus,
+.loginform input:-webkit-autofill:focus:focus,
+.loginform input:-webkit-autofill:active:focus {
+  background: #00ADE0;
+}
+.loginform .help-text {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.8em;
+}
+.loginform .button.hollow {
+  border-color: #fff;
+  color: #fff;
+}
+.loginform .button.hollow:hover {
+  background: #fff;
+  color: #0053A1;
+}
+.clublumen {
+  padding: 80px 0;
+}
+#mainContainer {
+  padding: 80px 0 ;
+}
+/*# sourceMappingURL=style.css.map */
