@@ -98,10 +98,85 @@ a.logo {
   background: #fff;
   color: #0053A1;
 }
+#banners {
+  padding-bottom: 80px;
+}
 .clublumen {
   padding: 80px 0;
 }
-#mainContainer {
-  padding: 80px 0 ;
+.mainContainer {
+  padding: 40px 0;
+}
+.mainContainer h2 {
+  background-color: #FCB829;
+  background-image: url(img/dotters.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  text-shadow: 4px 4px 0 #FAA019;
+  position: relative;
+}
+.mainContainer h2.red {
+  background-color: #ED1C2F;
+  text-shadow: 4px 4px 0 #B90038;
+}
+.mainContainer h2 .icon {
+  position: absolute;
+  left: 20px;
+  top: -60px;
+}
+.orbit-next,
+.orbit-previous {
+  background: #00ADE0;
+}
+.orbit-next:hover,
+.orbit-previous:hover,
+.orbit-next:focus,
+.orbit-previous:focus,
+.orbit-next:active,
+.orbit-previous:active {
+  background: #0053A1;
+  cursor: pointer;
+}
+.pattern {
+  background-position: top;
+  background-repeat: repeat-x;
+}
+.pattern.p1 {
+  background-image: url(img/pattern1.png);
+}
+.pattern.p2 {
+  background-image: url(img/pattern2.png);
+}
+.pattern.p3 {
+  background-image: url(img/pattern3.png);
+}
+.pattern.p4 {
+  background-image: url(img/pattern4.png);
+}
+.suscribe {
+  background: #98C93A;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3ZmE4MzAiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk4QzkzQSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+  background-image: -webkit-linear-gradient(right, #7fa830, #98C93A);
+  background-image: -moz-linear-gradient(right, #7fa830, #98C93A);
+  background-image: -o-linear-gradient(right, #7fa830, #98C93A);
+  background-image: linear-gradient(to left, #7fa830, #98C93A);
+  padding: 10px 0;
+}
+.suscribe h4 {
+  font-size: 1.1em;
+}
+.social-icons i {
+  font-size: 40px;
+  color: #fff;
+  margin-right: 20px;
+}
+.infobottom {
+  font-size: 0.9em;
+}
+.infobottom p {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

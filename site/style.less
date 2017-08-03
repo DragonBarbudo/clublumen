@@ -8,6 +8,9 @@
 @darkblue: #0053A1;
 @green: #98C93A;
 
+@yellow-shadow : #FAA019;
+@red-shadow: #B90038;
+
 .fontR{ font-family: 'Roboto', sans-serif; }
 .fontC{ font-family: 'Roboto Condensed', sans-serif; }
 .fontS{ font-family: 'Roboto Slab', serif; }
@@ -96,12 +99,78 @@ input:-webkit-autofill:active {
   }
 }
 
-
+#banners{padding-bottom: 80px;}
 
 .clublumen{
   padding: 80px 0;
 }
 
-#mainContainer{
-  padding: 80px 0 ;
+.mainContainer{
+  padding: 40px 0;
+
+  h2{
+    background-color: @yellow;
+    background-image: url(img/dotters.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    text-align: center;
+    padding: 40px 0;
+    color:@w;
+    text-shadow: 4px 4px 0 @yellow-shadow;
+    position: relative;
+    &.red{background-color: @red; text-shadow: 4px 4px 0 @red-shadow;}
+  
+    .icon{
+      position: absolute;
+      left: 20px;
+      top: -60px;
+      img{
+        
+      }
+    }
+  }
 }
+
+.orbit-next, .orbit-previous{
+  background: @blue;
+  &:hover, &:focus, &:active{
+    background: @darkblue;
+    cursor:pointer;
+  }
+}
+
+
+
+.pattern{
+  &.p1{ background-image:url(img/pattern1.png); }
+  &.p2{ background-image:url(img/pattern2.png); }
+  &.p3{ background-image:url(img/pattern3.png); }
+  &.p4{ background-image:url(img/pattern4.png); }
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+
+.suscribe{
+  background:@green;
+  .background-image(linear-gradient(right, @green/1.2, @green));
+  padding: 10px 0;
+  h4{
+    font-size: 1.1em;
+  }
+  
+}
+
+.social-icons{
+  i{
+    font-size: 40px;
+    color:@w;
+    margin-right: 20px;
+  }
+  
+}
+
+.infobottom{
+    font-size: 0.9em;
+    p{ color:@w; }
+  }
