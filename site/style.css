@@ -56,49 +56,14 @@ a.logo {
 .sticky-container {
   z-index: 20;
 }
+.initsession {
+  background: #0053A1;
+}
 #loginform {
-  -webkit-border-radius: 8px 0 0 8px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 8px 0 0 8px;
-  -moz-background-clip: padding;
-  border-radius: 8px 0 0 8px;
-  background-clip: padding-box;
-  background: #00ADE0;
+  background: #0053A1;
   padding: 10px;
   margin: 0;
   z-index: 19;
-}
-@media only screen and (min-width: 64.063em) {
-  #loginform {
-    position: fixed;
-    right: 0;
-    top: 55px;
-    text-align: right;
-  }
-}
-#loginform input,
-#loginform input:-webkit-autofill,
-#loginform input:-webkit-autofill:hover,
-#loginform input:-webkit-autofill:focus,
-#loginform input:-webkit-autofill:active {
-  transition: background-color 5000s ease-in-out 0s;
-  font-size: 0.8em;
-  padding: 6px;
-  height: auto;
-  max-width: 100px;
-  margin: 0;
-  background: #fff;
-  color: #0053A1 !important;
-  -webkit-text-fill-color: #0053A1 !important;
-  font-family: 'Roboto', sans-serif;
-  border-color: #0053A1;
-}
-#loginform input:focus,
-#loginform input:-webkit-autofill:focus,
-#loginform input:-webkit-autofill:hover:focus,
-#loginform input:-webkit-autofill:focus:focus,
-#loginform input:-webkit-autofill:active:focus {
-  background: #00ADE0;
 }
 #loginform .help-text {
   color: #fff;

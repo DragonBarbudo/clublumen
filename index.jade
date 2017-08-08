@@ -31,17 +31,8 @@ html(lang="en").no-js
                 li: a(href="#contacto") Contacto
             .top-bar-right
               ul.menu
-                li: a(data-toggle="loginform").show-for-large: i.fi-torso
-    
-              #loginform(data-toggler=".hide-for-large").hide-for-large
-                form(action="#")
-                  ul.menu
-                    li: input(type="text" placeholder="Usuario")
-                    li
-                      input(type="password" placeholder="Contraseña")
-                    li: button(type="submit").button.tiny.hollow Inicio de sesión
-                  a(href="#").help-text ¿Olvidaste tu usuario o contraseña?
-        
+                li: a(href="#iniciar-sesion").show-for-large.button.initsession Iniciar sesión
+
 
 
     .oribt(role="region" data-orbit)#inicio
@@ -52,6 +43,42 @@ html(lang="en").no-js
         li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-2.png").oribt-image
         li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-3.png").oribt-image
 
+    section.mainContainer#iniciar-sesion
+      .grid-container
+        form(action="#").grid-x.grid-padding-x
+            .cell.medium-3.medium-offset-2: input(type="text" name="login_user" placeholder="Usuario")
+            .cell.medium-3: input(type="password" name="login_pass" placeholder="Contraseña")
+            .cell.medium-2
+              //button(type="submit").button Iniciar sesión
+              a(href="acceso.html").button Iniciar sesión
+          .grid-x
+            .cell: .text-center: a(data-open="recover-password").help-text ¿Olvidaste tu usuario o contraseña?
+            
+            div.reveal(data-reveal)#recover-password
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+              h2 Recuperar contraseña
+              p Seleccione la opción para recuperar su contraseña
+              .grid-x.text-center
+                .cell.medium-6: button(data-open="recover-password-by-user").button Usuario
+                .cell.medium-6: button(data-open="recover-password-by-mail").button Correo electrónico
+              p En caso de no recordar su nombre de usuario o su correo electrónico favor de comunicarse al Tel: 01-800-841-7500 / (55) 8164-7300 de Lunes a Viernes de 09:00 a.m. a 06:00 p.m. hora del Centro de México
+            div.reveal(data-reveal)#recover-password-by-user
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+              h2 Recuperar contraseña
+                form(action="#")
+                  input(type="text" placeholder="Ingrese su nombre de usuario" required)
+                  .grid-x
+                    .cell.medium-6: button(data-open="recover-password").button Regresar
+                    .cell.medium-6.text-right: button(type="submit").button Recuperar contraseña
+            div.reveal(data-reveal)#recover-password-by-mail
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+              h2 Recuperar contraseña
+                form(action="#")
+                  input(type="text" placeholder="Correo electrónico" required)
+                  input(type="text" placeholder="Número de tarjeta" required)
+                  .grid-x
+                    .cell.medium-6: button(data-open="recover-password").button Regresar
+                    .cell.medium-6.text-right: button(type="submit").button Recuperar contraseña
 
 
     
@@ -105,7 +132,7 @@ html(lang="en").no-js
             
             div.reveal#registrar-tarjeta(data-reveal)
               button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
-              h1 Registro de datos
+              h2 Registro de datos
               form
                 fieldset.fieldset
                   legend Datos personales
@@ -157,7 +184,7 @@ html(lang="en").no-js
                           each val in tienda
                             option()=val
                     .cell.small-12
-                      p Selecciona de las siguientes opciones los temas que son de tu interés
+                      p Selecciona de las siguientes opciones los temas que son de tu interés:
                         - var temas = ['Arte', 'Adhesivos', 'Regalos', 'Dibujo', 'Papel', 'Escolar', 'Libros', 'Tecnología', 'Escritura', 'Contenedores', 'Manualidades', 'Envoltura', 'Oficina', 'Muebles', 'Didácticos', 'Productos ecológicos']
                         .grid-x
                           each val in temas
@@ -165,9 +192,66 @@ html(lang="en").no-js
                               label 
                                 input(type="checkbox" value="#{val}")
                                 | #{val}
+                fieldset.fieldset
+                  legend Dirección
+                  .grid-x
+                    .cell.small-6
+                      label Calle
+                        input(type="text")
+                    .cell.small-3
+                      label Número exterior
+                        input(type="text")
+                    .cell.small-3
+                      label Número interior
+                        input(type="text")
+
+                    .cell.small-6
+                      label Código postal
+                        input(type="text")
+                    .cell.small-6
+                      label Estado
+                        select
+                          - var edos = ['AGUASCALIENTES','BAJA CALIFORNIA NORTE','BAJA CALIFORNIA SUR','COAHUILA','CHIHUAHUA','COLIMA','CAMPECHE','CHIAPAS','DISTRITO FEDERAL','DURANGO','GUERRERO','GUANAJUATO','HIDALGO','JALISCO','MICHOACAN','MORELOS','MEXICO','NAYARIT','NUEVO LEON','OAXACA','PUEBLA','QUERETARO','QUINTANA ROO','SINALOA','SAN LUIS POTOSI','SONORA','TAMAULIPAS','TABASCO','TLAXCALA','VERACRUZ','YUCATAN','ZACATECAS']
+                          each val in edos
+                            option()=val
+                    .cell.small-6
+                      label Municipio
+                        input(type="text")
+                    .cell.small-6
+                      label Colonia
+                        input(type="text")
+                fieldset.fieldset
+                  legend Datos de la cuenta
+                  .grid-x
+                    .cell.small-4
+                      label Usuario
+                        input(type="text")
+                    .cell.small-4
+                      label Contraseña
+                        input(type="password")
+                    .cell.small-4
+                      label Confirmar contraseña
+                        input(type="password")
+                    .cell.small-6
+                      label E-mail
+                        input(type="email")
+                    .cell.small-6
+                      label Confirmar E-mail
+                        input(type="email")
+                    .cell
+                      label
+                        input(type="checkbox")
+                        |  He leído y estoy de acuerdo con los términos y condiciones y el aviso de privacidad 
+
                     .cell.small-12.text-right
-                      button(type="submit").button Siguiente
+                      button(type="button" data-open="registrar-resultado").button Siguiente
                       
+            div.reveal(data-reveal)#registrar-resultado
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+              h2 Registro exitoso
+              p Ha sido registrado.
+              .text-center
+                a(href="acceso.html").button Iniciar sesión
 
 
     section.mainContainer
@@ -229,9 +313,15 @@ html(lang="en").no-js
               .input-group
                 input.input-group-field(type="number")
                 .input-group-button
-                  button(type="submit").button Consultar
-              span
-                img(src="site/img/tarjeta-certificado.jpg")
+                  button(type="button" data-open="consulta-de-saldo").button Consultar
+            div.reveal(data-reveal)#consulta-de-saldo
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+              h2 Consulta de saldo 
+              p El saldo de su Certificado de Regalo Lumen es de #[strong $20].
+              p Canjéalos ahora en <a href="https://www.lumen.com.mx/" target="_blank">https://www.lumen.com.mx/</a>
+
+            span
+              img(src="site/img/tarjeta-certificado.jpg")
     .mainContainer
       h2.red Contacto
         .icon.hide-for-small-only: img(src="site/img/contacto.png")
