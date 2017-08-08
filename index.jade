@@ -99,10 +99,11 @@ html(lang="en").no-js
                   button(type="button" data-open="registrar-tarjeta").button Validar tarjeta
               span
                 img(src="site/img/numeros-tarjeta.png")
+
             
             
-            .reveal#registrar-tarjeta(data-reveal)
-              button(type="buton" data-close).close-button: span(aria-hidden="true") &times;
+            div.reveal#registrar-tarjeta(data-reveal)
+              button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
               h1 Registro de datos
               form
                 fieldset.fieldset
@@ -315,6 +316,10 @@ html(lang="en").no-js
         .top-bar-right
           ul.menu
             li: a(href="#"): img(src="site/img/poweredbyblue.png")
+
+
+
+    
 
 
 

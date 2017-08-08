@@ -33,7 +33,7 @@
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/site\/img\/activacion.png": {
 		"ft": 32768,
@@ -2229,7 +2229,7 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 1
+		"outputStyle": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
