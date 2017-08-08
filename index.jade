@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+doctype html
 html(lang="en").no-js
   head
     meta(charset="UTF-8")
@@ -53,33 +53,34 @@ html(lang="en").no-js
         li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-3.png").oribt-image
 
 
-    .grid-container(data-magellan-target="que-es")#que-es
-      .cell
-        .clublumen.text-center: img(src="site/img/club-lumen.png" alt="Club Lúmen")
-    .grid-container.intro
-      .grid-x.grid-padding-x.grid-margin-x
-        .cell.medium-6
-          .card
-            .card-section: h2 ¿Qué es?
-            img(src="site/img/quees.png")
-            .card-section
-              p Para lumen lo más importante son sus clientes, es por eso que con el afán de seguir promoviendo tus ganas de crear y materializar tus ideas hemos creado Club Lumen, el Programa de Lealtad diseñado especialmente para ti con el objetivo de brindarte beneficios para que sigas desarrollando tu creatividad.
-              p En Club Lumen podrás acumular Puntos Lumen por todas las compras de productos y servicios participantes que realices en cualquiera de nuestras sucursales y utilizarlos como forma de pago; además de participar en Promociones Especiales. 
-              p En Club Lumen® el punto es crear. 
-        .cell.medium-6
-          .card
-            .card-section: h2 ¿Cómo funciona?
-            img(src="site/img/comofunciona.png")
-            .card-section
-              p 1. Adquiere tu Tarjeta Club Lumen por $200.00 pesos en cualquiera de nuestras sucursales.
+
+    
+    section.mainContainer
+      h2 ¿Qué es?
+        .icon.hide-for-small-only: img(src="site/img/quees.png")
+      .pattern.p2: .grid-container
+        .grid-x.grid-padding-x.grid-margin-x(data-magellan-target="que-es")#que-es
+          .cell.medium-6
+            p Para lumen lo más importante son sus clientes, es por eso que con el afán de seguir promoviendo tus ganas de crear y materializar tus ideas hemos creado Club Lumen, el Programa de Lealtad diseñado especialmente para ti con el objetivo de brindarte beneficios para que sigas desarrollando tu creatividad.
+            p En Club Lumen podrás acumular Puntos Lumen por todas las compras de productos y servicios participantes que realices en cualquiera de nuestras sucursales y utilizarlos como forma de pago; además de participar en Promociones Especiales. 
+          .cell.medium-6
+            .callout.primary.text-center
+              h4 En Club Lumen® el punto es crear. 
+    
+    section.mainContainer
+      h2.red ¿Cómo funciona?
+        .icon.hide-for-small-only: img(src="site/img/comofunciona.png")
+      .pattern.p2: .grid-container
+        .grid-x.grid-padding-x.grid-margin-x(data-magellan-target="como-funciona")#como-funciona
+          .cell.medium-6
+            p 1. Adquiere tu Tarjeta Club Lumen por $200.00 pesos en cualquiera de nuestras sucursales.
               p 2. Registra tus datos en este sitio de internet o llamando a los teléfonos 01-800-841-7500 o 8164-7300.
               p 3. Acumula Puntos Lumen por todas las compras que realices en nuestras sucursales.
               p 4. Utiliza tus Puntos Lumen como forma de pago parcial o total en todas las compras que realices en tiendas lumen.
-              p La vigencia de los Puntos Lumen® es de 12 meses de acuerdo al mes en el que fue realizada la Acumulación de los Puntos.
-              p Para mayor información consulta la sección de Términos y Condiciones y Aviso de Privacidad.
-
-    
-
+             
+          .cell.medium-6
+            p La vigencia de los Puntos Lumen® es de 12 meses de acuerdo al mes en el que fue realizada la Acumulación de los Puntos.
+            p Para mayor información consulta la sección de Términos y Condiciones y Aviso de Privacidad.
 
     section.mainContainer
       h2 Registro

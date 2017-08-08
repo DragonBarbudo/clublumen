@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <title>..:: Club Lumen ::..</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link(rel="stylesheet", href="site/lib/foundation.min.css")-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed|Roboto+Slab"/>
-    <link rel="stylesheet" href="site/style.css"/>
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed|Roboto+Slab">
+    <link rel="stylesheet" href="site/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
-    <div data-sticky-container="data-sticky-container">
-      <div data-sticky="data-sticky" data-margin-top="0">
+    <div data-sticky-container>
+      <div data-sticky data-margin-top="0">
         <div data-responsive-toggle="mainMenu" data-hide-for="large" id="mainMenuResponsive" class="title-bar">
           <button type="button" data-toggle="mainMenu" class="menu-icon"></button>
-          <div class="title-bar-title"><img src="site/img/club-lumen.png" class="logo-img"/></div>
+          <div class="title-bar-title"><img src="site/img/club-lumen.png" class="logo-img"></div>
         </div>
         <div id="mainMenu" class="top-bar stacked-for-large">
           <div class="top-bar-left">
-            <ul data-magellan="data-magellan" data-smooth-scroll="data-smooth-scroll" data-offset="280" class="menu">
-              <li><a href="#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"/></a></li>
+            <ul data-magellan data-smooth-scroll data-offset="280" class="menu">
+              <li><a href="#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"></a></li>
               <li><a href="https://www.lumen.com.mx/" target="_blank">Lumen</a></li>
               <li><a href="#que-es">¿Qué es?</a></li>
               <li><a href="#activacion">Registro</a></li>
@@ -39,10 +39,10 @@
               <form action="#">
                 <ul class="menu">
                   <li>
-                    <input type="text" placeholder="Usuario"/>
+                    <input type="text" placeholder="Usuario">
                   </li>
                   <li>
-                    <input type="password" placeholder="Contraseña"/>
+                    <input type="password" placeholder="Contraseña">
                   </li>
                   <li>
                     <button type="submit" class="button tiny hollow">Inicio de sesión</button>
@@ -54,60 +54,66 @@
         </div>
       </div>
     </div>
-    <div role="region" data-orbit="data-orbit" id="inicio" class="oribt">
+    <div role="region" data-orbit id="inicio" class="oribt">
       <ul class="orbit-container"> 
         <button class="orbit-previous">&#9664;&#xFE0E;</button>
         <button class="orbit-next">&#9654;&#xFE0E;</button>
         <li class="orbit-slide">
-          <figure class="oribt-figure"><img src="site/img/slider-1.png" class="oribt-image"/></figure>
+          <figure class="oribt-figure"><img src="site/img/slider-1.png" class="oribt-image"></figure>
         </li>
         <li class="orbit-slide">
-          <figure class="oribt-figure"><img src="site/img/slider-2.png" class="oribt-image"/></figure>
+          <figure class="oribt-figure"><img src="site/img/slider-2.png" class="oribt-image"></figure>
         </li>
         <li class="orbit-slide">
-          <figure class="oribt-figure"><img src="site/img/slider-3.png" class="oribt-image"/></figure>
+          <figure class="oribt-figure"><img src="site/img/slider-3.png" class="oribt-image"></figure>
         </li>
       </ul>
     </div>
-    <div data-magellan-target="que-es" id="que-es" class="grid-container">
-      <div class="cell">
-        <div class="clublumen text-center"><img src="site/img/club-lumen.png" alt="Club Lúmen"/></div>
-      </div>
-    </div>
-    <div class="grid-container intro">
-      <div class="grid-x grid-padding-x grid-margin-x">
-        <div class="cell medium-6">
-          <div class="card">
-            <div class="card-section">
-              <h2>¿Qué es?</h2>
-            </div><img src="site/img/quees.png"/>
-            <div class="card-section">
+    <section class="mainContainer">
+      <h2>¿Qué es?
+        <div class="icon hide-for-small-only"><img src="site/img/quees.png"></div>
+      </h2>
+      <div class="pattern p2">
+        <div class="grid-container">
+          <div data-magellan-target="que-es" id="que-es" class="grid-x grid-padding-x grid-margin-x">
+            <div class="cell medium-6">
               <p>Para lumen lo más importante son sus clientes, es por eso que con el afán de seguir promoviendo tus ganas de crear y materializar tus ideas hemos creado Club Lumen, el Programa de Lealtad diseñado especialmente para ti con el objetivo de brindarte beneficios para que sigas desarrollando tu creatividad.</p>
               <p>En Club Lumen podrás acumular Puntos Lumen por todas las compras de productos y servicios participantes que realices en cualquiera de nuestras sucursales y utilizarlos como forma de pago; además de participar en Promociones Especiales. </p>
-              <p>En Club Lumen® el punto es crear. </p>
+            </div>
+            <div class="cell medium-6">
+              <div class="callout primary text-center">
+                <h4>En Club Lumen® el punto es crear. </h4>
+              </div>
             </div>
           </div>
         </div>
-        <div class="cell medium-6">
-          <div class="card">
-            <div class="card-section">
-              <h2>¿Cómo funciona?</h2>
-            </div><img src="site/img/comofunciona.png"/>
-            <div class="card-section">
-              <p>1. Adquiere tu Tarjeta Club Lumen por $200.00 pesos en cualquiera de nuestras sucursales.</p>
-              <p>2. Registra tus datos en este sitio de internet o llamando a los teléfonos 01-800-841-7500 o 8164-7300.</p>
-              <p>3. Acumula Puntos Lumen por todas las compras que realices en nuestras sucursales.</p>
-              <p>4. Utiliza tus Puntos Lumen como forma de pago parcial o total en todas las compras que realices en tiendas lumen.</p>
+      </div>
+    </section>
+    <section class="mainContainer">
+      <h2 class="red">¿Cómo funciona?
+        <div class="icon hide-for-small-only"><img src="site/img/comofunciona.png"></div>
+      </h2>
+      <div class="pattern p2">
+        <div class="grid-container">
+          <div data-magellan-target="como-funciona" id="como-funciona" class="grid-x grid-padding-x grid-margin-x">
+            <div class="cell medium-6">
+              <p>1. Adquiere tu Tarjeta Club Lumen por $200.00 pesos en cualquiera de nuestras sucursales.
+                <p>2. Registra tus datos en este sitio de internet o llamando a los teléfonos 01-800-841-7500 o 8164-7300.</p>
+                <p>3. Acumula Puntos Lumen por todas las compras que realices en nuestras sucursales.</p>
+                <p>4. Utiliza tus Puntos Lumen como forma de pago parcial o total en todas las compras que realices en tiendas lumen.</p>
+              </p>
+            </div>
+            <div class="cell medium-6">
               <p>La vigencia de los Puntos Lumen® es de 12 meses de acuerdo al mes en el que fue realizada la Acumulación de los Puntos.</p>
               <p>Para mayor información consulta la sección de Términos y Condiciones y Aviso de Privacidad.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <section class="mainContainer">
       <h2>Registro
-        <div class="icon hide-for-small-only"><img src="site/img/activacion.png"/></div>
+        <div class="icon hide-for-small-only"><img src="site/img/activacion.png"></div>
       </h2>
       <div class="pattern p2">
         <div class="grid-container">
@@ -121,13 +127,13 @@
               <form action="#">
                 <label>Ingresa los 16 números de la Tarjeta Club Lumen:</label>
                 <div class="input-group">
-                  <input type="number" class="input-group-field"/>
+                  <input type="number" class="input-group-field">
                   <div class="input-group-button">
                     <button type="button" data-open="registrar-tarjeta" class="button">Validar tarjeta</button>
                   </div>
-                </div><span><img src="site/img/numeros-tarjeta.png"/></span>
+                </div><span><img src="site/img/numeros-tarjeta.png"></span>
               </form>
-              <div id="registrar-tarjeta" data-reveal="data-reveal" class="reveal">
+              <div id="registrar-tarjeta" data-reveal class="reveal">
                 <button type="buton" data-close="" class="close-button"><span aria-hidden="true">&times;</span></button>
                 <h1>Registro de datos</h1>
                 <form>
@@ -136,55 +142,55 @@
                     <div class="grid-x">
                       <div class="cell small-4">
                         <label>Nombre(s)
-                          <input type="text"/>
+                          <input type="text">
                         </label>
                       </div>
                       <div class="cell small-4">
                         <label>Apellido Paterno
-                          <input type="text"/>
+                          <input type="text">
                         </label>
                       </div>
                       <div class="cell small-4">
                         <label>Apellido Materno
-                          <input type="text"/>
+                          <input type="text">
                         </label>
                       </div>
                       <div class="cell small-6">
                         <p>Sexo
                           <label>Femenino 
-                            <input type="radio" name="sexo" id="sexo" value="f" checked="checked"/>
+                            <input type="radio" name="sexo" id="sexo" value="f" checked>
                           </label>
                           <label>Masculino 
-                            <input type="radio" name="sexo" id="sexo" value="m"/>
+                            <input type="radio" name="sexo" id="sexo" value="m">
                           </label>
                         </p>
                       </div>
                       <div class="cell small-6">
                         <label>Fecha de nacimiento</label>
-                        <input type="date" placeholder="dd/mm/aa"/>
+                        <input type="date" placeholder="dd/mm/aa">
                       </div>
                       <div class="cell small-4">
                         <label>Teléfono 1
-                          <input type="text"/>
+                          <input type="text">
                         </label>
                       </div>
                       <div class="cell small-4">
                         <label>Teléfono 2
-                          <input type="text"/>
+                          <input type="text">
                         </label>
                       </div>
                       <div class="cell small-4">
                         <label>Celular 044
-                          <input type="text" placeholder=""/>
+                          <input type="text" placeholder="">
                         </label>
                       </div>
                       <div class="cell small-4">
                         <p>Hijos
                           <label>Sí 
-                            <input type="radio" name="hijos" id="hijos" value="si" checked="checked"/>
+                            <input type="radio" name="hijos" id="hijos" value="si" checked>
                           </label>
                           <label>No 
-                            <input type="radio" name="hijos" id="hijos" value="no"/>
+                            <input type="radio" name="hijos" id="hijos" value="no">
                           </label>
                         </p>
                       </div>
@@ -218,82 +224,82 @@
                           <div class="grid-x">
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Arte"/>Arte
+                                <input type="checkbox" value="Arte">Arte
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Adhesivos"/>Adhesivos
+                                <input type="checkbox" value="Adhesivos">Adhesivos
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Regalos"/>Regalos
+                                <input type="checkbox" value="Regalos">Regalos
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Dibujo"/>Dibujo
+                                <input type="checkbox" value="Dibujo">Dibujo
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Papel"/>Papel
+                                <input type="checkbox" value="Papel">Papel
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Escolar"/>Escolar
+                                <input type="checkbox" value="Escolar">Escolar
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Libros"/>Libros
+                                <input type="checkbox" value="Libros">Libros
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Tecnología"/>Tecnología
+                                <input type="checkbox" value="Tecnología">Tecnología
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Escritura"/>Escritura
+                                <input type="checkbox" value="Escritura">Escritura
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Contenedores"/>Contenedores
+                                <input type="checkbox" value="Contenedores">Contenedores
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Manualidades"/>Manualidades
+                                <input type="checkbox" value="Manualidades">Manualidades
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Envoltura"/>Envoltura
+                                <input type="checkbox" value="Envoltura">Envoltura
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Oficina"/>Oficina
+                                <input type="checkbox" value="Oficina">Oficina
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Muebles"/>Muebles
+                                <input type="checkbox" value="Muebles">Muebles
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Didácticos"/>Didácticos
+                                <input type="checkbox" value="Didácticos">Didácticos
                               </label>
                             </div>
                             <div class="cell small-4">
                               <label> 
-                                <input type="checkbox" value="Productos ecológicos"/>Productos ecológicos
+                                <input type="checkbox" value="Productos ecológicos">Productos ecológicos
                               </label>
                             </div>
                           </div>
@@ -313,22 +319,22 @@
     </section>
     <section class="mainContainer">
       <h2 class="red">Promociones
-        <div class="icon hide-for-small-only"><img src="site/img/promo.png"/></div>
+        <div class="icon hide-for-small-only"><img src="site/img/promo.png"></div>
       </h2>
       <div class="pattern p3">
         <div class="grid-container">
           <div data-magellan-target="promociones" id="promociones" class="grid-x grid-padding-x grid-margin-x">
-            <div id="banners" class="cell large-4 text-center"><a href="#" class="banner"><img src="site/img/banner-1.jpg"/></a><a href="#" class="banner"><img src="site/img/banner-2.jpg"/></a><a href="#" class="banner"><img src="site/img/banner-3.jpg"/></a></div>
+            <div id="banners" class="cell large-4 text-center"><a href="#" class="banner"><img src="site/img/banner-1.jpg"></a><a href="#" class="banner"><img src="site/img/banner-2.jpg"></a><a href="#" class="banner"><img src="site/img/banner-3.jpg"></a></div>
             <div class="cell large-8 text-center">
-              <div role="region" data-orbit="data-orbit" class="oribt">
+              <div role="region" data-orbit class="oribt">
                 <ul class="orbit-container"> 
                   <button class="orbit-previous">&#9664;&#xFE0E;</button>
                   <button class="orbit-next">&#9654;&#xFE0E;</button>
                   <li class="orbit-slide">
-                    <figure class="oribt-figure"><img src="site/img/promo_120713.jpg" class="oribt-image"/></figure>
+                    <figure class="oribt-figure"><img src="site/img/promo_120713.jpg" class="oribt-image"></figure>
                   </li>
                   <li class="orbit-slide">
-                    <figure class="oribt-figure"><img src="site/img/promo_120713.jpg" class="oribt-image"/></figure>
+                    <figure class="oribt-figure"><img src="site/img/promo_120713.jpg" class="oribt-image"></figure>
                   </li>
                 </ul>
               </div>
@@ -339,7 +345,7 @@
     </section>
     <section class="mainContainer">    
       <h2>Comprar puntos
-        <div class="icon hide-for-small-only"><img src="site/img/comprar.png"/></div>
+        <div class="icon hide-for-small-only"><img src="site/img/comprar.png"></div>
       </h2>
       <div class="pattern p4">
         <div class="grid-container">
@@ -395,11 +401,11 @@
               <form>
                 <label>Ingresa el Código de barras de 13 dígitos que se encuentra en la parte posterior del Certificado de Regalo Lumen®</label>
                 <div class="input-group">
-                  <input type="number" class="input-group-field"/>
+                  <input type="number" class="input-group-field">
                   <div class="input-group-button">
                     <button type="submit" class="button">Consultar</button>
                   </div>
-                </div><span><img src="site/img/tarjeta-certificado.jpg"/></span>
+                </div><span><img src="site/img/tarjeta-certificado.jpg"></span>
               </form>
             </div>
           </div>
@@ -408,7 +414,7 @@
     </div>
     <div class="mainContainer">
       <h2 class="red">Contacto
-        <div class="icon hide-for-small-only"><img src="site/img/contacto.png"/></div>
+        <div class="icon hide-for-small-only"><img src="site/img/contacto.png"></div>
       </h2>
       <div class="pattern p2">
         <div class="grid-container">
@@ -420,42 +426,42 @@
                     <label>
                        
                       Nombre(s)
-                      <input type="text"/>
+                      <input type="text">
                     </label>
                   </div>
                   <div class="cell medium-4">
                     <label>
                        
                       Apellido Paterno
-                      <input type="text"/>
+                      <input type="text">
                     </label>
                   </div>
                   <div class="cell medium-4">
                     <label>
                        
                       Apellidos Materno
-                      <input type="text"/>
+                      <input type="text">
                     </label>
                   </div>
                   <div class="cell medium-4">
                     <label>
                        
                       teléfono
-                      <input type="text"/>
+                      <input type="text">
                     </label>
                   </div>
                   <div class="cell medium-4">
                     <label>
                        
                       Correo electrónico
-                      <input type="email" required="required"/>
+                      <input type="email" required>
                     </label>
                   </div>
                   <div class="cell medium-4">
                     <label>
                        
                       Confirmar correo electrónico
-                      <input type="email" required="required"/>
+                      <input type="email" required>
                     </label>
                   </div>
                   <div class="cell medium-8">
@@ -467,7 +473,7 @@
                   </div>
                   <div class="cell medium-4">
                     <label>
-                      <input type="checkbox"/>He leído y estoy de acuerdo con el aviso de privacidad 
+                      <input type="checkbox">He leído y estoy de acuerdo con el aviso de privacidad 
                     </label>
                     <button type="submit" class="button">Enviar</button>
                     <p class="help-text">Recibirá una copia por correo electrónico de su comentario.</p>
@@ -487,10 +493,10 @@
             <form action="">
               <div class="grid-x">
                 <div class="cell-small-5">
-                  <input type="text" placeholder="Nombre"/>
+                  <input type="text" placeholder="Nombre">
                 </div>
                 <div class="cell-small-5">
-                  <input type="email" placeholder="Correo electrónico"/>
+                  <input type="email" placeholder="Correo electrónico">
                 </div>
                 <div class="cell-small-2">
                   <button type="submit" class="button">Suscribirse</button>
@@ -504,7 +510,7 @@
             </h4>
           </div>
           <div class="cell medium-4 infobottom">
-            <p><strong>Correo:</strong> info@clublumen.com.mx<br/><strong>Tel:</strong> 01-800-841-7500 / (55) 8164-7300<br/>Lunes a Viernes de 09:00 a.m. a 06:00 p.m. CDMX</p>
+            <p><strong>Correo:</strong> info@clublumen.com.mx<br><strong>Tel:</strong> 01-800-841-7500 / (55) 8164-7300<br>Lunes a Viernes de 09:00 a.m. a 06:00 p.m. CDMX</p>
           </div>
         </div>
       </div>
@@ -522,7 +528,7 @@
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li><a href="#"><img src="site/img/poweredbyblue.png"/></a></li>
+            <li><a href="#"><img src="site/img/poweredbyblue.png"></a></li>
           </ul>
         </div>
       </div>
