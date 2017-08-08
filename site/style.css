@@ -14,7 +14,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #0053A1;
 }
 .banner {
@@ -34,6 +34,7 @@ h4 {
 #mainMenuResponsive ul li a {
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.8;
 }
 #mainMenu ul li a.is-active,
 #mainMenuResponsive ul li a.is-active {
@@ -50,22 +51,36 @@ a.logo {
 }
 .logo-img {
   margin: 0 auto;
-  max-width: 180px;
+  max-width: 240px;
 }
-.loginform {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDUzQTEiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwQURFMCIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
-  background-image: -webkit-linear-gradient(right, #0053A1, #00ADE0);
-  background-image: -moz-linear-gradient(right, #0053A1, #00ADE0);
-  background-image: -o-linear-gradient(right, #0053A1, #00ADE0);
-  background-image: linear-gradient(to left, #0053A1, #00ADE0);
+.sticky-container {
+  z-index: 20;
+}
+#loginform {
+  -webkit-border-radius: 8px 0 0 8px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 8px 0 0 8px;
+  -moz-background-clip: padding;
+  border-radius: 8px 0 0 8px;
+  background-clip: padding-box;
+  background: #00ADE0;
   padding: 10px;
   margin: 0;
+  z-index: 19;
 }
-.loginform input,
-.loginform input:-webkit-autofill,
-.loginform input:-webkit-autofill:hover,
-.loginform input:-webkit-autofill:focus,
-.loginform input:-webkit-autofill:active {
+@media only screen and (min-width: 64.063em) {
+  #loginform {
+    position: fixed;
+    right: 0;
+    top: 55px;
+    text-align: right;
+  }
+}
+#loginform input,
+#loginform input:-webkit-autofill,
+#loginform input:-webkit-autofill:hover,
+#loginform input:-webkit-autofill:focus,
+#loginform input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   font-size: 0.8em;
   padding: 6px;
@@ -78,23 +93,23 @@ a.logo {
   font-family: 'Roboto', sans-serif;
   border-color: #0053A1;
 }
-.loginform input:focus,
-.loginform input:-webkit-autofill:focus,
-.loginform input:-webkit-autofill:hover:focus,
-.loginform input:-webkit-autofill:focus:focus,
-.loginform input:-webkit-autofill:active:focus {
+#loginform input:focus,
+#loginform input:-webkit-autofill:focus,
+#loginform input:-webkit-autofill:hover:focus,
+#loginform input:-webkit-autofill:focus:focus,
+#loginform input:-webkit-autofill:active:focus {
   background: #00ADE0;
 }
-.loginform .help-text {
+#loginform .help-text {
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 0.8em;
 }
-.loginform .button.hollow {
+#loginform .button.hollow {
   border-color: #fff;
   color: #fff;
 }
-.loginform .button.hollow:hover {
+#loginform .button.hollow:hover {
   background: #fff;
   color: #0053A1;
 }
@@ -108,19 +123,19 @@ a.logo {
   padding: 40px 0;
 }
 .mainContainer h2 {
+  font-size: 2rem;
   background-color: #FCB829;
-  background-image: url(img/dotters.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   color: #fff;
-  text-shadow: 4px 4px 0 #FAA019;
+  text-shadow: 2px 2px 0 #FAA019;
   position: relative;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 .mainContainer h2.red {
   background-color: #ED1C2F;
-  text-shadow: 4px 4px 0 #B90038;
+  text-shadow: 2px 2px 0 #B90038;
 }
 .mainContainer h2 .icon {
   position: absolute;

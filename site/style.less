@@ -21,7 +21,7 @@ body{
 
 
 h1, h2, h3, h4{
-  .fontS;
+  .fontC;
   color:@darkblue;
 }
 
@@ -31,12 +31,14 @@ h1, h2, h3, h4{
 #mainMenu, #mainMenuResponsive{
   background: @blue;
   padding: 0;
+  
   ul{
     background: transparent;
     li{
       a{
         color:@w;
         .fontC;
+        line-height: 1.8;
         &.is-active{
          border-bottom: 1px solid @darkblue;
         }
@@ -58,13 +60,25 @@ a.logo{
 }
 .logo-img{
     margin: 0 auto;
-    max-width: 180px;
+    max-width: 240px;
 }
 
-.loginform{
-  .background-image(linear-gradient(right, @darkblue, @blue));
+
+.sticky-container{z-index: 20;}
+
+#loginform{
+  @media only screen and (min-width: 64.063em) { 
+  position: fixed;
+  right: 0;
+  top: 55px;
+  text-align: right;
+  }
+  
+  .border-radius(8px 0 0 8px);
+  background: @blue;
   padding: 10px;
   margin: 0;
+  z-index: 19;
   input, input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -109,17 +123,19 @@ input:-webkit-autofill:active {
   padding: 40px 0;
 
   h2{
+    font-size: 2rem;
     background-color: @yellow;
-    background-image: url(img/dotters.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    //background-image: url(img/dotters.png);
+    //background-repeat: no-repeat;
+    //background-position: right bottom;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
     color:@w;
-    text-shadow: 4px 4px 0 @yellow-shadow;
+    text-shadow: 2px 2px 0 @yellow-shadow;
     position: relative;
-    &.red{background-color: @red; text-shadow: 4px 4px 0 @red-shadow;}
-  
+    &.red{background-color: @red; text-shadow: 2px 2px 0 @red-shadow;}
+    margin-bottom: 80px;
+    margin-top: 80px;
     .icon{
       position: absolute;
       left: 20px;
