@@ -159,4 +159,13 @@ a.logo {
 .infobottom p {
   color: #fff;
 }
+.reportebtn {
+  float: right;
+}
+footer {
+  font-size: 0.9rem;
+}
+footer .menu .menu-text {
+  color: #9f9f9f;
+}
 /*# sourceMappingURL=style.css.map */

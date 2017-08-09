@@ -19,20 +19,19 @@
           <div class="title-bar-title"><img src="site/img/club-lumen.png" class="logo-img"/></div>
         </div>
         <div id="mainMenu" class="top-bar stacked-for-large">
-          <div class="top-bar-left">
-            <ul data-magellan="data-magellan" data-smooth-scroll="data-smooth-scroll" data-offset="280" class="menu">
-              <li><a href="#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"/></a></li>
-              <li><a href="https://www.lumen.com.mx/" target="_blank">Lumen</a></li>
-              <li><a href="#que-es">¿Qué es?</a></li>
-              <li><a href="#activacion">Registro</a></li>
-              <li><a href="#promociones">Promociones</a></li>
-              <li><a href="#comprar-puntos">Comprar puntos</a></li>
-              <li><a href="#certificado-de-regalo">Certificado de regalo</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </div>
+          <div class="top-bar-left"></div>
+          <ul data-magellan="data-magellan" data-smooth-scroll="data-smooth-scroll" data-offset="280" class="menu">
+            <li><a href="#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"/></a></li>
+            <li><a href="https://www.lumen.com.mx/" target="_blank">Lumen</a></li>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#activacion">Registro</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#comprar-puntos">Comprar puntos</a></li>
+            <li><a href="#certificado-de-regalo">Certificado de regalo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
           <div class="top-bar-right">
-            <ul class="menu">
+            <ul data-smooth-scroll="data-smooth-scroll" data-offset="100" class="menu">
               <li><a href="#iniciar-sesion" class="show-for-large button initsession">Iniciar sesión</a></li>
             </ul>
           </div>
@@ -185,7 +184,7 @@
                   </div>
                 </div><span><img src="site/img/numeros-tarjeta.png"></span>
               </form>
-              <div id="registrar-tarjeta" data-reveal class="reveal">
+              <div id="registrar-tarjeta" data-reveal="data-reveal" class="reveal">
                 <button type="buton" data-close="" class="close-button"><span aria-hidden="true">&times;</span></button>
                 <h2>Registro de datos</h2>
                 <form>
@@ -193,169 +192,142 @@
                     <legend>Datos personales</legend>
                     <div class="grid-x">
                       <div class="cell small-4">
-                        <label>Nombre(s)
-                          <input type="text">
-                        </label>
+                        <label>Nombre(s)</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-4">
-                        <label>Apellido Paterno
-                          <input type="text">
-                        </label>
+                        <label>Apellido Paterno</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-4">
-                        <label>Apellido Materno
-                          <input type="text">
-                        </label>
+                        <label>Apellido Materno</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-6">
-                        <p>Sexo
-                          <label>Femenino 
-                            <input type="radio" name="sexo" id="sexo" value="f" checked>
-                          </label>
-                          <label>Masculino 
-                            <input type="radio" name="sexo" id="sexo" value="m">
-                          </label>
-                        </p>
+                        <p>Sexo</p>
+                        <label>Femenino 
+                          <input type="radio" name="sexo" id="sexo" value="f" checked="checked"/>
+                        </label>
+                        <label>Masculino 
+                          <input type="radio" name="sexo" id="sexo" value="m"/>
+                        </label>
                       </div>
                       <div class="cell small-6">
                         <label>Fecha de nacimiento</label>
-                        <input type="date" placeholder="dd/mm/aa">
+                        <input type="date" placeholder="dd/mm/aa"/>
                       </div>
                       <div class="cell small-4">
-                        <label>Teléfono 1
-                          <input type="text">
+                        <label>Teléfono 1</label>
+                        <input type="text"/>
+                      </div>
+                      <div class="cell small-4">
+                        <label>Teléfono 2</label>
+                        <input type="text"/>
+                      </div>
+                      <div class="cell small-4">
+                        <label>Celular 044</label>
+                        <input type="text" placeholder=""/>
+                      </div>
+                      <div class="cell small-4">
+                        <p>Hijos</p>
+                        <label>Sí 
+                          <input type="radio" name="hijos" id="hijos" value="si" checked="checked"/>
+                        </label>
+                        <label>No 
+                          <input type="radio" name="hijos" id="hijos" value="no"/>
                         </label>
                       </div>
                       <div class="cell small-4">
-                        <label>Teléfono 2
-                          <input type="text">
-                        </label>
+                        <label>Ocupación</label>
+                        <select>
+                          <option>Estudiante</option>
+                          <option>Maestro</option>
+                          <option>Diseñador</option>
+                          <option>Ingeniero</option>
+                          <option>Arquitecto</option>
+                          <option>Artes plásticas</option>
+                          <option>Profesionista</option>
+                          <option>Impresor</option>
+                          <option>Empresa</option>
+                          <option>Negocio propio</option>
+                          <option>Ama de casa</option>
+                        </select>
                       </div>
                       <div class="cell small-4">
-                        <label>Celular 044
-                          <input type="text" placeholder="">
-                        </label>
-                      </div>
-                      <div class="cell small-4">
-                        <p>Hijos
-                          <label>Sí 
-                            <input type="radio" name="hijos" id="hijos" value="si" checked>
-                          </label>
-                          <label>No 
-                            <input type="radio" name="hijos" id="hijos" value="no">
-                          </label>
-                        </p>
-                      </div>
-                      <div class="cell small-4">
-                        <label>Ocupación
-                          <select>
-                            <option>Estudiante</option>
-                            <option>Maestro</option>
-                            <option>Diseñador</option>
-                            <option>Ingeniero</option>
-                            <option>Arquitecto</option>
-                            <option>Artes plásticas</option>
-                            <option>Profesionista</option>
-                            <option>Impresor</option>
-                            <option>Empresa</option>
-                            <option>Negocio propio</option>
-                            <option>Ama de casa</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="cell small-4">
-                        <label>Tienda que frecuentas
-                          <select>
-                            <option>Acueducto</option>
-                            <option>Aguascalientes</option>
-                          </select>
-                        </label>
+                        <label>Tienda que frecuentas</label>
+                        <select>
+                          <option>Acueducto</option>
+                          <option>Aguascalientes</option>
+                        </select>
                       </div>
                       <div class="cell small-12">
-                        <p>Selecciona de las siguientes opciones los temas que son de tu interés:
-                          <div class="grid-x">
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Arte">Arte
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Adhesivos">Adhesivos
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Regalos">Regalos
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Dibujo">Dibujo
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Papel">Papel
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Escolar">Escolar
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Libros">Libros
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Tecnología">Tecnología
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Escritura">Escritura
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Contenedores">Contenedores
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Manualidades">Manualidades
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Envoltura">Envoltura
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Oficina">Oficina
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Muebles">Muebles
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Didácticos">Didácticos
-                              </label>
-                            </div>
-                            <div class="cell small-4">
-                              <label> 
-                                <input type="checkbox" value="Productos ecológicos">Productos ecológicos
-                              </label>
-                            </div>
+                        <p>Selecciona de las siguientes opciones los temas que son de tu interés:</p>
+                        <div class="grid-x">
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Arte"/>Arte
                           </div>
-                        </p>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Adhesivos"/>Adhesivos
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Regalos"/>Regalos
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Dibujo"/>Dibujo
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Papel"/>Papel
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Escolar"/>Escolar
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Libros"/>Libros
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Tecnología"/>Tecnología
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Escritura"/>Escritura
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Contenedores"/>Contenedores
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Manualidades"/>Manualidades
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Envoltura"/>Envoltura
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Oficina"/>Oficina
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Muebles"/>Muebles
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Didácticos"/>Didácticos
+                          </div>
+                          <div class="cell small-4">
+                            <label> </label>
+                            <input type="checkbox" value="Productos ecológicos"/>Productos ecológicos
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </fieldset>
@@ -363,72 +335,65 @@
                     <legend>Dirección</legend>
                     <div class="grid-x">
                       <div class="cell small-6">
-                        <label>Calle
-                          <input type="text">
-                        </label>
+                        <label>Calle</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-3">
-                        <label>Número exterior
-                          <input type="text">
-                        </label>
+                        <label>Número exterior</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-3">
-                        <label>Número interior
-                          <input type="text">
-                        </label>
+                        <label>Número interior</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-6">
-                        <label>Código postal
-                          <input type="text">
-                        </label>
+                        <label>Código postal</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-6">
-                        <label>Estado
-                          <select>
-                            <option>AGUASCALIENTES</option>
-                            <option>BAJA CALIFORNIA NORTE</option>
-                            <option>BAJA CALIFORNIA SUR</option>
-                            <option>COAHUILA</option>
-                            <option>CHIHUAHUA</option>
-                            <option>COLIMA</option>
-                            <option>CAMPECHE</option>
-                            <option>CHIAPAS</option>
-                            <option>DISTRITO FEDERAL</option>
-                            <option>DURANGO</option>
-                            <option>GUERRERO</option>
-                            <option>GUANAJUATO</option>
-                            <option>HIDALGO</option>
-                            <option>JALISCO</option>
-                            <option>MICHOACAN</option>
-                            <option>MORELOS</option>
-                            <option>MEXICO</option>
-                            <option>NAYARIT</option>
-                            <option>NUEVO LEON</option>
-                            <option>OAXACA</option>
-                            <option>PUEBLA</option>
-                            <option>QUERETARO</option>
-                            <option>QUINTANA ROO</option>
-                            <option>SINALOA</option>
-                            <option>SAN LUIS POTOSI</option>
-                            <option>SONORA</option>
-                            <option>TAMAULIPAS</option>
-                            <option>TABASCO</option>
-                            <option>TLAXCALA</option>
-                            <option>VERACRUZ</option>
-                            <option>YUCATAN</option>
-                            <option>ZACATECAS</option>
-                          </select>
-                        </label>
+                        <label>Estado</label>
+                        <select>
+                          <option>AGUASCALIENTES</option>
+                          <option>BAJA CALIFORNIA NORTE</option>
+                          <option>BAJA CALIFORNIA SUR</option>
+                          <option>COAHUILA</option>
+                          <option>CHIHUAHUA</option>
+                          <option>COLIMA</option>
+                          <option>CAMPECHE</option>
+                          <option>CHIAPAS</option>
+                          <option>DISTRITO FEDERAL</option>
+                          <option>DURANGO</option>
+                          <option>GUERRERO</option>
+                          <option>GUANAJUATO</option>
+                          <option>HIDALGO</option>
+                          <option>JALISCO</option>
+                          <option>MICHOACAN</option>
+                          <option>MORELOS</option>
+                          <option>MEXICO</option>
+                          <option>NAYARIT</option>
+                          <option>NUEVO LEON</option>
+                          <option>OAXACA</option>
+                          <option>PUEBLA</option>
+                          <option>QUERETARO</option>
+                          <option>QUINTANA ROO</option>
+                          <option>SINALOA</option>
+                          <option>SAN LUIS POTOSI</option>
+                          <option>SONORA</option>
+                          <option>TAMAULIPAS</option>
+                          <option>TABASCO</option>
+                          <option>TLAXCALA</option>
+                          <option>VERACRUZ</option>
+                          <option>YUCATAN</option>
+                          <option>ZACATECAS</option>
+                        </select>
                       </div>
                       <div class="cell small-6">
-                        <label>Municipio
-                          <input type="text">
-                        </label>
+                        <label>Municipio</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-6">
-                        <label>Colonia
-                          <input type="text">
-                        </label>
+                        <label>Colonia</label>
+                        <input type="text"/>
                       </div>
                     </div>
                   </fieldset>
@@ -436,34 +401,28 @@
                     <legend>Datos de la cuenta</legend>
                     <div class="grid-x">
                       <div class="cell small-4">
-                        <label>Usuario
-                          <input type="text">
-                        </label>
+                        <label>Usuario</label>
+                        <input type="text"/>
                       </div>
                       <div class="cell small-4">
-                        <label>Contraseña
-                          <input type="password">
-                        </label>
+                        <label>Contraseña</label>
+                        <input type="password"/>
                       </div>
                       <div class="cell small-4">
-                        <label>Confirmar contraseña
-                          <input type="password">
-                        </label>
+                        <label>Confirmar contraseña</label>
+                        <input type="password"/>
                       </div>
                       <div class="cell small-6">
-                        <label>E-mail
-                          <input type="email">
-                        </label>
+                        <label>E-mail</label>
+                        <input type="email"/>
                       </div>
                       <div class="cell small-6">
-                        <label>Confirmar E-mail
-                          <input type="email">
-                        </label>
+                        <label>Confirmar E-mail</label>
+                        <input type="email"/>
                       </div>
                       <div class="cell">
-                        <label>
-                          <input type="checkbox"> He leído y estoy de acuerdo con los términos y condiciones y el aviso de privacidad 
-                        </label>
+                        <label></label>
+                        <input type="checkbox"/> He leído y estoy de acuerdo con los términos y condiciones y el aviso de privacidad 
                       </div>
                       <div class="cell small-12 text-right">
                         <button type="button" data-open="registrar-resultado" class="button">Siguiente</button>
@@ -472,11 +431,11 @@
                   </fieldset>
                 </form>
               </div>
-              <div data-reveal id="registrar-resultado" class="reveal">
+              <div data-reveal="data-reveal" id="registrar-resultado" class="reveal">
                 <button type="buton" data-close="" class="close-button"><span aria-hidden="true">&times;</span></button>
                 <h2>Registro exitoso</h2>
                 <p>Ha sido registrado.</p>
-                <div class="text-center"><a href="acceso.html" class="button">Iniciar sesión</a></div>
+                <div class="text-center"></div><a href="acceso.html" class="button">Iniciar sesión</a>
               </div>
             </div>
           </div>
@@ -692,10 +651,9 @@
         <div class="top-bar-left">
           <ul class="menu">
             <li class="menu-text">COPYRIGHT © 2017</li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Reporte por robo o extravío</a></li>
-            <li><a href="#">Aviso de Privacidad</a></li>
+            <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="aviso-de-privacidad.html">Aviso de Privacidad</a></li>
           </ul>
         </div>
         <div class="top-bar-right">

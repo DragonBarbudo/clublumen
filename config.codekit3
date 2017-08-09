@@ -9,6 +9,28 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/acceso.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/acceso.html",
+		"oF": 0
+		},
+	"\/acceso.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/acceso.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/aviso-de-privacidad.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/aviso-de-privacidad.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/clublumen.sketch": {
 		"ft": 8192,
 		"oA": 2,
@@ -34,6 +56,12 @@
 		"oAP": "\/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/mixins.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/mixins.html",
+		"oF": 0
 		},
 	"\/mixins.jade": {
 		"cOD": 1,
@@ -366,6 +394,20 @@
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
+		},
+	"\/terminos-y-condiciones.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/terminos-y-condiciones.html",
+		"oF": 0
+		},
+	"\/terminos-y-condiciones.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/terminos-y-condiciones.html",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [

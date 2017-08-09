@@ -10,7 +10,7 @@ mixin head
     link(rel="stylesheet", href="site/style.css")
     link(rel="icon" type="image/png" href="favicon.png")
 
-mixin menu
+mixin menu(user)
     div(data-sticky-container)
       div(data-sticky data-margin-top="0")
         .title-bar(data-responsive-toggle="mainMenu", data-hide-for="large")#mainMenuResponsive
@@ -18,19 +18,23 @@ mixin menu
           .title-bar-title: img(src="site/img/club-lumen.png").logo-img
         .top-bar.stacked-for-large#mainMenu
             .top-bar-left
+            - var absolute=""
+            - if(user){ absolute = "index.html"}
               ul.menu(data-magellan data-smooth-scroll data-offset="280")
-                li: a(href="#inicio").logo.show-for-large: img(src="site/img/club-lumen.png").logo-img
+                li: a(href="#{absolute}#inicio").logo.show-for-large: img(src="site/img/club-lumen.png").logo-img
                 li: a(href="https://www.lumen.com.mx/" target="_blank") Lumen
-                li: a(href="#que-es") ¿Qué es?
-                li: a(href="#activacion") Registro
-                li: a(href="#promociones") Promociones
-                li: a(href="#comprar-puntos") Comprar puntos
-                li: a(href="#certificado-de-regalo") Certificado de regalo
-                li: a(href="#contacto") Contacto
+                li: a(href="#{absolute}#que-es") ¿Qué es?
+                li: a(href="#{absolute}#activacion") Registro
+                li: a(href="#{absolute}#promociones") Promociones
+                li: a(href="#{absolute}#comprar-puntos") Comprar puntos
+                li: a(href="#{absolute}#certificado-de-regalo") Certificado de regalo
+                li: a(href="#{absolute}#contacto") Contacto
             .top-bar-right
-              ul.menu
-                li: a(href="#iniciar-sesion").show-for-large.button.initsession Iniciar sesión
-
+              ul.menu(data-smooth-scroll data-offset="100")
+                - if(user)
+                    li: a(href="index.html").show-for-large.button.initsession Cerrar sesión
+                - else 
+                    li: a(href="#iniciar-sesion").show-for-large.button.initsession Iniciar sesión
 
 mixin suscribe
     .suscribe
@@ -62,10 +66,9 @@ mixin footer
         .top-bar-left
           ul.menu
             li.menu-text COPYRIGHT © 2017
-            li: a(href="#") Términos y condiciones
-            li: a(href="#") Preguntas frecuentes
-            li: a(href="#") Reporte por robo o extravío
-            li: a(href="#") Aviso de Privacidad
+            li: a(href="terminos-y-condiciones.html") Términos y condiciones
+            li: a(href="preguntas-frecuentes.html") Preguntas frecuentes
+            li: a(href="aviso-de-privacidad.html") Aviso de Privacidad
         .top-bar-right
           ul.menu
             li: a(href="#"): img(src="site/img/poweredbyblue.png")
@@ -77,3 +80,132 @@ mixin scripts
     script(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js")
     script(src="site/lib/what-input.js")
     script(src="site/script.js")
+
+
+mixin registrarTarjeta(user)
+    div.reveal#registrar-tarjeta(data-reveal)
+        button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+        h2 Registro de datos
+        form
+            fieldset.fieldset
+                legend Datos personales
+                .grid-x
+                    .cell.small-4
+                        label Nombre(s)
+                        input(type="text")
+                    .cell.small-4
+                        label Apellido Paterno
+                        input(type="text")
+                    .cell.small-4
+                        label Apellido Materno
+                        input(type="text")
+                    .cell.small-6
+                        p Sexo
+                        label Femenino 
+                            input(type="radio" name="sexo" id="sexo" value="f" checked)
+                        label Masculino 
+                            input(type="radio" name="sexo" id="sexo" value="m")
+                    .cell.small-6
+                        label Fecha de nacimiento
+                        input(type="date", placeholder="dd/mm/aa")
+                    
+                    .cell.small-4
+                        label Teléfono 1
+                        input(type="text")
+                    .cell.small-4
+                        label Teléfono 2
+                        input(type="text")
+                    .cell.small-4
+                        label Celular 044
+                        input(type="text" placeholder="")
+                    .cell.small-4
+                        p Hijos
+                        label Sí 
+                            input(type="radio" name="hijos" id="hijos" value="si" checked)
+                        label No 
+                            input(type="radio" name="hijos" id="hijos" value="no")
+                    .cell.small-4
+                        label Ocupación
+                        select
+                            - var ocu = ['Estudiante', 'Maestro', 'Diseñador', 'Ingeniero', 'Arquitecto', 'Artes plásticas', 'Profesionista', 'Impresor', 'Empresa', 'Negocio propio', 'Ama de casa']
+                            each val in ocu
+                                option=val
+                    .cell.small-4
+                        label Tienda que frecuentas
+                        select
+                            - var tienda = ['Acueducto', 'Aguascalientes']
+                            each val in tienda
+                                option=val
+                    .cell.small-12
+                        p Selecciona de las siguientes opciones los temas que son de tu interés:
+                        - var temas = ['Arte', 'Adhesivos', 'Regalos', 'Dibujo', 'Papel', 'Escolar', 'Libros', 'Tecnología', 'Escritura', 'Contenedores', 'Manualidades', 'Envoltura', 'Oficina', 'Muebles', 'Didácticos', 'Productos ecológicos']
+                        .grid-x
+                            each val in temas
+                                .cell.small-4
+                                    label 
+                                    input(type="checkbox" value="#{val}")
+                                    | #{val}
+            fieldset.fieldset
+                legend Dirección
+                .grid-x
+                    .cell.small-6
+                        label Calle
+                        input(type="text")
+                    .cell.small-3
+                        label Número exterior
+                        input(type="text")
+                    .cell.small-3
+                        label Número interior
+                        input(type="text")
+
+                    .cell.small-6
+                        label Código postal
+                        input(type="text")
+                    .cell.small-6
+                        label Estado
+                        select
+                            - var edos = ['AGUASCALIENTES','BAJA CALIFORNIA NORTE','BAJA CALIFORNIA SUR','COAHUILA','CHIHUAHUA','COLIMA','CAMPECHE','CHIAPAS','DISTRITO FEDERAL','DURANGO','GUERRERO','GUANAJUATO','HIDALGO','JALISCO','MICHOACAN','MORELOS','MEXICO','NAYARIT','NUEVO LEON','OAXACA','PUEBLA','QUERETARO','QUINTANA ROO','SINALOA','SAN LUIS POTOSI','SONORA','TAMAULIPAS','TABASCO','TLAXCALA','VERACRUZ','YUCATAN','ZACATECAS']
+                            each val in edos
+                                option=val
+                    .cell.small-6
+                        label Municipio
+                        input(type="text")
+                    .cell.small-6
+                        label Colonia
+                        input(type="text")
+            fieldset.fieldset
+                legend Datos de la cuenta
+                .grid-x
+                    .cell.small-4
+                        label Usuario
+                        input(type="text")
+                    .cell.small-4
+                        label Contraseña
+                        input(type="password")
+                    .cell.small-4
+                        label Confirmar contraseña
+                        input(type="password")
+                    .cell.small-6
+                        label E-mail
+                        input(type="email")
+                    .cell.small-6
+                        label Confirmar E-mail
+                        input(type="email")
+                    .cell
+                        label
+                        input(type="checkbox")
+                        |  He leído y estoy de acuerdo con los términos y condiciones y el aviso de privacidad 
+            
+                    .cell.small-12.text-right
+                        button(type="button" data-open="registrar-resultado").button Siguiente
+                    
+    div.reveal(data-reveal)#registrar-resultado
+        button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
+        - if(user)
+            h2 Datos actualizados
+            p Sus datos han sido actualizados correctamente
+        - else
+            h2 Registro exitoso
+            p Ha sido registrado.
+        .text-center
+        a(href="acceso.html").button Iniciar sesión
