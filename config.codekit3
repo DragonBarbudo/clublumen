@@ -35,6 +35,17 @@
 		"oAP": "\/CNAME",
 		"oF": 0
 		},
+	"\/favicon.png": {
+		"ft": 32768,
+		"iS": 1501,
+		"oA": 0,
+		"oAP": "\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -62,17 +73,6 @@
 		"oAP": "\/mixins.html",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/site\/favicon.png": {
-		"ft": 32768,
-		"iS": 1501,
-		"oA": 0,
-		"oAP": "\/site\/favicon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/site\/img\/activacion.png": {
 		"ft": 32768,
@@ -137,6 +137,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/site\/img\/clublumen.png": {
+		"ft": 32768,
+		"iS": 3469,
+		"oA": 0,
+		"oAP": "\/site\/img\/clublumen.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/site\/img\/comofunciona.png": {
 		"ft": 32768,
 		"iS": 43085,
@@ -175,6 +186,17 @@
 		"iS": 4448,
 		"oA": 0,
 		"oAP": "\/site\/img\/dotters.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/img\/meses.png": {
+		"ft": 32768,
+		"iS": 1957,
+		"oA": 0,
+		"oAP": "\/site\/img\/meses.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -301,6 +323,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/site\/img\/regalo.png": {
+		"ft": 32768,
+		"iS": 1754,
+		"oA": 0,
+		"oAP": "\/site\/img\/regalo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/site\/img\/slider-1.png": {
 		"ft": 32768,
 		"iS": 90066,
@@ -342,6 +375,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/site\/img\/usuario.png": {
+		"ft": 32768,
+		"iS": 3021,
+		"oA": 0,
+		"oAP": "\/site\/img\/usuario.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/site\/lib\/_lesshat.less": {
