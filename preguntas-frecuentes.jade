@@ -1,0 +1,148 @@
+include mixins
+
+doctype html
+html(lang="en").no-js
+  head
+    +head
+  body
+    +menu(true)
+
+    section.mainContainer
+      h2.red Preguntas frecuentes
+      .pattern.p4: .grid-container
+        .grid-x.grid-padding-x.grid-margin-x
+            .cell.large-6
+                ul.accordion(data-accordion="")
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué es Club Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Para Lumen® lo más importante son sus clientes, es por eso que con el afán de seguir promoviendo tus ganas de crear y materializar tus ideas hemos creado Club Lumen®, el Programa de Lealtad diseñado especialmente para ti con el objetivo de brindarte beneficios para que sigas desarrollando tu creatividad. 
+                            p En Club Lumen® podrás Acumular Puntos Lumen® por las compras que realices en cualquiera de nuestras sucursales y utilizarlos como forma de pago; además de participar en Promociones Especiales.
+                    
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿En dónde puedo adquirir la Tarjeta Club Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Podrás comprar la Tarjeta Club Lumen® en cualquier sucursal lumen de la República Mexicana.
+                    
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Cómo puedo Acumular Puntos Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p En cada compra recibirás el 1% (uno por ciento) sobre el valor total de los productos y servicios participantes antes de IVA en Puntos Lumen®. 
+                            p Para acumular Puntos Lumen® es necesario presentar tu Tarjeta al momento de realizar la compra. 
+                            p En caso de que no tengas tu Tarjeta al momento de una compra podrás acumular Puntos Lumen® en tu cuenta proporcionando tu usuario y los 4 últimos números de teléfono que diste de alta al momento de Registrar tus datos. Si no haz registrado los datos de tu Tarjeta no podrás acumular Puntos Lumen® sin mostrar la Tarjeta.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Podré Acumular Puntos por todas mis compras?
+                        div.accordion-content(data-tab-content="")
+                            p No todos los productos y servicios ofrecidos en nuestras sucursales Bonifican Puntos Lumen®. Los productos que NO bonifican puntos son los siguientes: 
+                            .grid-x
+                                .cell.large-6: ul 
+                                    li Computadoras de escritorio Apple
+                                    li Computadoras de escritorio PC
+                                    li Computadoras portátiles Apple
+                                    li Computadoras portátiles PC
+                                    li Impresoras
+                                    li Monitores
+                                    li Monitores Apple
+                                    li Multifuncionales
+                                    li Plotters
+                                    li Reproductores MP3
+                                    li Scanners
+                                    li Servicio de Termoplanchado y doblado de planos
+                                    li Tabletas
+                                    li Tabletas Ipad
+                                .cell.large-6: ul 
+                                    li Tarjeta Aula 365
+                                    li Tarjeta MS Office 2010 Home & Business
+                                    li Tarjeta MS Office Home & Student
+                                    li Tarjetas App Store
+                                    li Tarjetas de Puntos XBOX
+                                    li Tarjetas de Regalo California Pizza Chicken
+                                    li Tarjetas de Regalo Chillis México
+                                    li Tarjetas de Regalo Starbucks México
+                                    li Tarjetas Itunes
+                                    li Tarjetas Paysafecard
+                                    li Tarjetas Todito Cash
+                                    li Tarjetas XBOX Gold Card
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Para qué sirve la Compra de Puntos Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p La compra de Puntos Lumen® se utiliza para recargar saldo a tu Tarjeta o a la de alguna otra persona que tu decidas. 
+                            p Por cada $1.00 peso que pagues se Acumulará a la tarjeta indicada 1 Punto Lumen®.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Para qué utilizo mis Puntos Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Los Puntos Lumen® que tengas Acumulados en tu cuenta podrás utilizarlos como forma de pago por productos y servicios ofrecidos en nuestras sucursales. Podrás cubrir el monto total o parcial de tu compra con Puntos Lumen®. Consulta los productos y servicios participantes. 
+                            p Para poder utilizar tus Puntos como forma de pago es indispensable que Registres los datos de tu Tarjeta en el sitio de internet del Programa o llamando a nuestro Centro de Atención Telefónica.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Cuánto valen mis Puntos Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Cada Punto Lumen® que tengas en tu cuenta equivale a $1.00 peso.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Puedo cambiar mis Puntos por dinero?
+                        div.accordion-content(data-tab-content="")
+                            p No, los Puntos Lumen® únicamente pueden ser utilizados como forma de pago en Lumen® y no podrán ser cambiados por dinero.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué vigencia tiene mi tarjeta Club Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Tu Tarjeta Club Lumen® no tiene una vigencia, por lo cual no mantiene una anualidad.
+
+
+            .cell.large-6
+                ul.accordion(data-accordion="")
+                    
+
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué vigencia tienen mis Puntos Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p La vigencia de los Puntos Lumen® es de 12 meses de acuerdo al mes en el que fue realizada la acumulación de los Puntos; por ejemplo, los Puntos acumulados en el mes de Mayo del año en curso vencerán el primer minuto del primer día de Junio del siguiente año.
+
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué debo hacer en caso de Robo o Extravío de mi Tarjeta?
+                        div.accordion-content(data-tab-content="")
+                            p Si perdiste o te robaron tu Tarjeta Club Lumen® deberás realizar la Cancelación de la misma iniciando sesión en el sitio de internet del Programa utilizando tu Usuario y Contraseña; o también podrás realizar la Cancelación llamando a nuestro Centro de Atención Telefónica. 
+                            p Una vez que tu tarjeta haya sido Cancelada nadie podrá hacer uso de tus Puntos.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Cómo puedo solicitar una Reposición de mi Tarjeta?
+                        div.accordion-content(data-tab-content="")
+                            p Una vez que tu Tarjeta haya sido Cancelada por Robo o Extravío deberás acudir a cualquiera de nuestras sucursales y adquirir una nueva Tarjeta Club Lumen® cubirendo el costo de reposición de $10.00 pesos y solicitar en ese momento el traspaso de Puntos Lumen de la tarjeta Cancelada por Robo o Extravió a la nueva Tarjeta.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué son los Certificados de Regalo Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p Los Certificados de Regalo Lumen® son monederos electrónicos que podrás adquirir en cualquier sucursal Lumen®. El monto mínimo de compra de un Certificado es de $50.00 pesos y el monto máximo es de $15,000.00 pesos.
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Cuándo se acabe el saldo del Certificado de Regalo, puedo realizar una nueva recarga?
+                        div.accordion-content(data-tab-content="")
+                            p No, los Certificados de Regalo no son recargables.
+
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué vigencia tienen los Certificados de Regalo?
+                        div.accordion-content(data-tab-content="")
+                            p El Certificado tiene una vigencia de 24 meses a partir de la fecha de compra. Una vez transcurrido este periodo de tiempo, el saldo remanente perderá su valor y no podrá ser rembolsado.
+
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Qué diferencia hay entre una Tarjeta Club Lumen® y un Certificado de Regalo Lumen®?
+                        div.accordion-content(data-tab-content="")
+                            p La Tarjeta Club Lumen® pertenece al Programa de Lealtad de tiendas Lumen® en el cual acumulas Puntos por tus compras. El Certificado de Regalo es un monedero electrónico en el que abonas una cantidad determinada en dinero para utilizarlo como forma de pago.
+
+                    li.accordion-item(data-accordion-item="")
+                        a(href="#").accordion-title ¿Las compras de Mayoreo Generan Puntos?
+                        div.accordion-content(data-tab-content="")
+                            p No, todas las compras realizadas por mayoreo no participan dentro del programa Club Lumen .
+
+ 
+
+        
+
+    +suscribe
+    
+    +footer
+
+    +scripts
+
+
+
+    
+
+
+
+    

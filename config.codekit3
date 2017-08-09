@@ -77,6 +77,20 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/preguntas-frecuentes.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/preguntas-frecuentes.html",
+		"oF": 0
+		},
+	"\/preguntas-frecuentes.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/preguntas-frecuentes.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/site\/img\/activacion.png": {
 		"ft": 32768,
 		"iS": 12043,
@@ -116,6 +130,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/site\/img\/blue.png": {
+		"ft": 32768,
+		"iS": 2180,
+		"oA": 0,
+		"oAP": "\/site\/img\/blue.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/site\/img\/club-lumen.png": {
