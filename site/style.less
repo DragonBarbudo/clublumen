@@ -134,14 +134,7 @@ a.logo{
 
 
 
-.pattern{
-  &.p1{ background-image:url(img/pattern1.png); }
-  &.p2{ background-image:url(img/pattern2.png); }
-  &.p3{ background-image:url(img/pattern3.png); }
-  &.p4{ background-image:url(img/pattern4.png); }
-  background-position: top;
-  background-repeat: repeat-x;
-}
+
 
 
 .suscribe{
@@ -193,4 +186,42 @@ a.logo{
       -ms-flex: 1 1 auto;
       flex: 0.3 1 auto;
       margin-right: auto;
+  }
+
+
+
+
+  .callout{
+    background: transparent !important;
+    border: none;
+    border-top: 4px dotted @darkblue;
+    border-bottom: 8px dotted @blue;
+    h4{ line-height: 1.2; }
+    position: relative;
+    .icon{
+      margin-bottom: -84px;
+    }
+  }
+
+
+  .comopunto{
+    display: block;
+    width: 40px; height: 40px;
+    background: @blue;
+    color:@w;
+    text-align: center;
+    .border-radius(50%);
+    .fontC;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+    .box-shadow(-2px 2px 0px @w/1.2);
+    text-shadow: 0 1px 0 @darkblue;
+    margin-right: 20px;
+    float:left;
+  }
+
+
+  strong.blue{
+    color:@darkblue;
   }

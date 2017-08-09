@@ -23,20 +23,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/aviso-de-privacidad.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/aviso-de-privacidad.html",
-		"oF": 0
-		},
-	"\/aviso-de-privacidad.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/aviso-de-privacidad.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/clublumen.sketch": {
 		"ft": 8192,
 		"oA": 2,
@@ -77,19 +63,16 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/preguntas-frecuentes.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/preguntas-frecuentes.html",
-		"oF": 0
-		},
-	"\/preguntas-frecuentes.jade": {
-		"cOD": 1,
-		"ft": 512,
+	"\/site\/favicon.png": {
+		"ft": 32768,
+		"iS": 1501,
 		"oA": 0,
-		"oAP": "\/preguntas-frecuentes.html",
+		"oAP": "\/site\/favicon.png",
 		"oF": 0,
-		"oS": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/site\/img\/activacion.png": {
 		"ft": 32768,
@@ -253,11 +236,22 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/site\/img\/PoweredByBlue.png": {
+	"\/site\/img\/peso.png": {
 		"ft": 32768,
-		"iS": 2368,
+		"iS": 7564,
 		"oA": 0,
-		"oAP": "\/site\/img\/PoweredByBlue.png",
+		"oAP": "\/site\/img\/peso.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/site\/img\/poweredbyblue.png": {
+		"ft": 32768,
+		"iS": 973,
+		"oA": 0,
+		"oAP": "\/site\/img\/poweredbyblue.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -283,6 +277,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/site\/img\/puntoslumen.png": {
+		"ft": 32768,
+		"iS": 6737,
+		"oA": 0,
+		"oAP": "\/site\/img\/puntoslumen.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/site\/img\/quees.png": {
@@ -425,20 +430,6 @@
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
-		},
-	"\/terminos-y-condiciones.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/terminos-y-condiciones.html",
-		"oF": 0
-		},
-	"\/terminos-y-condiciones.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/terminos-y-condiciones.html",
-		"oF": 0,
-		"oS": 0
 		}
 	},
 "hooks": [
