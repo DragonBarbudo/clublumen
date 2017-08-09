@@ -168,11 +168,16 @@ footer {
 footer .menu .menu-text {
   color: #9f9f9f;
 }
+footer.blue {
+  background: #A4CBF6;
+  padding: 5px 0 0 0;
+  font-size: 0.8rem;
+}
 .menutopbar {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
-  flex: 0.5 1 auto;
+  flex: 0.3 1 auto;
   margin-right: auto;
 }
 /*# sourceMappingURL=style.css.map */
