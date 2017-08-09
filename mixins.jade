@@ -11,24 +11,28 @@ mixin head
     link(rel="icon" type="image/png" href="favicon.png")
 
 mixin menu(user)
+    - var absolute=""
+                - if(user){ absolute = "index.html"}
     div(data-sticky-container)
       div(data-sticky data-margin-top="0")
         .title-bar(data-responsive-toggle="mainMenu", data-hide-for="large")#mainMenuResponsive
           button.menu-icon(type="button" data-toggle="mainMenu")
           .title-bar-title: img(src="site/img/club-lumen.png").logo-img
         .top-bar.stacked-for-large#mainMenu
+            .menutopbar
+                ul.menu(data-smooth-scroll)
+                    li: a(href="#{absolute}#inicio").logo.show-for-large: img(src="site/img/club-lumen.png").logo-img
+
             .top-bar-left
-            - var absolute=""
-            - if(user){ absolute = "index.html"}
-              ul.menu(data-magellan data-smooth-scroll data-offset="280")
-                li: a(href="#{absolute}#inicio").logo.show-for-large: img(src="site/img/club-lumen.png").logo-img
-                li: a(href="https://www.lumen.com.mx/" target="_blank") Lumen
-                li: a(href="#{absolute}#que-es") ¿Qué es?
-                li: a(href="#{absolute}#activacion") Registro
-                li: a(href="#{absolute}#promociones") Promociones
-                li: a(href="#{absolute}#comprar-puntos") Comprar puntos
-                li: a(href="#{absolute}#certificado-de-regalo") Certificado de regalo
-                li: a(href="#{absolute}#contacto") Contacto
+
+                ul.menu(data-magellan data-smooth-scroll data-offset="280")
+                    li: a(href="https://www.lumen.com.mx/" target="_blank") Lumen
+                    li: a(href="#{absolute}#que-es") ¿Qué es?
+                    li: a(href="#{absolute}#activacion") Registro
+                    li: a(href="#{absolute}#promociones") Promociones
+                    li: a(href="#{absolute}#comprar-puntos") Comprar puntos
+                    li: a(href="#{absolute}#certificado-de-regalo") Certificado de regalo
+                    li: a(href="#{absolute}#contacto") Contacto
             .top-bar-right
               ul.menu(data-smooth-scroll data-offset="100")
                 - if(user)

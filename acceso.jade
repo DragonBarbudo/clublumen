@@ -19,7 +19,7 @@ html(lang="en").no-js
               li.tabs-title.is-active: a(href="#datos-personales") Datos personales
               li.tabs-title: a(href="#datos-cuenta") Datos de cuenta
               li.tabs-title: a(href="#saldo-puntos") Saldo en puntos
-              li.tabs-title: a(href="#datos-facturacion") Datos de facturación
+              //li.tabs-title: a(href="#datos-facturacion") Datos de facturación
               li.tabs-title.reportebtn: a(href="#reporte") Reporte por robo o extravío
             .tabs-content(data-tabs-content="acceso-tabs")
               .tabs-panel.is-active#datos-personales
@@ -84,7 +84,7 @@ html(lang="en").no-js
                       .cell.large-6: h4 Puntos Canjeados: 0.00
                     p Por el momento no hay transacciones registradas en el mes seleccionado.
                 .text-right: button(type="button").button.secondary Imprimir
-              .tabs-panel#datos-facturacion
+              //.tabs-panel#datos-facturacion
                 h4 Datos de facturación
                 form
                   .grid-x.grid-padding-x
@@ -136,7 +136,7 @@ html(lang="en").no-js
                     .cell.text-right
                       button(type="submit").button Guardar
               
-              .tabs-panel.is-active#reporte
+              .tabs-panel#reporte
                 h4 Reporte por robo o extravío
                 .grid-x
                   .cell.large-6.large-offset-3

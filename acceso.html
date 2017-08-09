@@ -19,17 +19,22 @@
           <div class="title-bar-title"><img src="site/img/club-lumen.png" class="logo-img"/></div>
         </div>
         <div id="mainMenu" class="top-bar stacked-for-large">
-          <div class="top-bar-left"></div>
-          <ul data-magellan="data-magellan" data-smooth-scroll="data-smooth-scroll" data-offset="280" class="menu">
-            <li><a href="index.html#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"/></a></li>
-            <li><a href="https://www.lumen.com.mx/" target="_blank">Lumen</a></li>
-            <li><a href="index.html#que-es">¿Qué es?</a></li>
-            <li><a href="index.html#activacion">Registro</a></li>
-            <li><a href="index.html#promociones">Promociones</a></li>
-            <li><a href="index.html#comprar-puntos">Comprar puntos</a></li>
-            <li><a href="index.html#certificado-de-regalo">Certificado de regalo</a></li>
-            <li><a href="index.html#contacto">Contacto</a></li>
-          </ul>
+          <div class="menutopbar">
+            <ul data-smooth-scroll="data-smooth-scroll" class="menu">
+              <li><a href="index.html#inicio" class="logo show-for-large"><img src="site/img/club-lumen.png" class="logo-img"/></a></li>
+            </ul>
+          </div>
+          <div class="top-bar-left">
+            <ul data-magellan="data-magellan" data-smooth-scroll="data-smooth-scroll" data-offset="280" class="menu">
+              <li><a href="https://www.lumen.com.mx/" target="_blank">Lumen</a></li>
+              <li><a href="index.html#que-es">¿Qué es?</a></li>
+              <li><a href="index.html#activacion">Registro</a></li>
+              <li><a href="index.html#promociones">Promociones</a></li>
+              <li><a href="index.html#comprar-puntos">Comprar puntos</a></li>
+              <li><a href="index.html#certificado-de-regalo">Certificado de regalo</a></li>
+              <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+          </div>
           <div class="top-bar-right">
             <ul data-smooth-scroll="data-smooth-scroll" data-offset="100" class="menu">
               <li><a href="index.html" class="show-for-large button initsession">Cerrar sesión</a></li>
@@ -48,7 +53,7 @@
                 <li class="tabs-title is-active"><a href="#datos-personales">Datos personales</a></li>
                 <li class="tabs-title"><a href="#datos-cuenta">Datos de cuenta</a></li>
                 <li class="tabs-title"><a href="#saldo-puntos">Saldo en puntos</a></li>
-                <li class="tabs-title"><a href="#datos-facturacion">Datos de facturación</a></li>
+                <!--li.tabs-title: a(href="#datos-facturacion") Datos de facturación-->
                 <li class="tabs-title reportebtn"><a href="#reporte">Reporte por robo o extravío</a></li>
               </ul>
               <div data-tabs-content="acceso-tabs" class="tabs-content">
@@ -465,108 +470,60 @@
                     <button type="button" class="button secondary">Imprimir</button>
                   </div>
                 </div>
-                <div id="datos-facturacion" class="tabs-panel">
-                  <h4>Datos de facturación</h4>
-                  <form>
-                    <div class="grid-x grid-padding-x">
-                      <div class="cell large-6">
-                        <fieldset class="fieldset">
-                          <legend>Información</legend>
-                          <div class="grid-x">
-                            <div class="cell">
-                              <label>Nombre o Razón social</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell">
-                              <label>R.F.C.</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell">
-                              <label>Correo electrónico</label>
-                              <input type="email">
-                            </div>
-                          </div>
-                        </fieldset>
-                      </div>
-                      <div class="cell large-6">
-                        <fieldset class="fieldset">
-                          <legend>Domicilio fiscal</legend>
-                          <div class="grid-x">
-                            <div class="cell small-6">
-                              <label>Calle</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-3">
-                              <label>Número exterior</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-3">
-                              <label>Número interior</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-6">
-                              <label>Código postal</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-6">
-                              <label>Colonia</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-6">
-                              <label>Delegación o Municipio</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-6">
-                              <label>Ciudad</label>
-                              <input type="text">
-                            </div>
-                            <div class="cell small-6">
-                              <label>Estado</label>
-                              <select>
-                                <option>AGUASCALIENTES</option>
-                                <option>BAJA CALIFORNIA NORTE</option>
-                                <option>BAJA CALIFORNIA SUR</option>
-                                <option>COAHUILA</option>
-                                <option>CHIHUAHUA</option>
-                                <option>COLIMA</option>
-                                <option>CAMPECHE</option>
-                                <option>CHIAPAS</option>
-                                <option>DISTRITO FEDERAL</option>
-                                <option>DURANGO</option>
-                                <option>GUERRERO</option>
-                                <option>GUANAJUATO</option>
-                                <option>HIDALGO</option>
-                                <option>JALISCO</option>
-                                <option>MICHOACAN</option>
-                                <option>MORELOS</option>
-                                <option>MEXICO</option>
-                                <option>NAYARIT</option>
-                                <option>NUEVO LEON</option>
-                                <option>OAXACA</option>
-                                <option>PUEBLA</option>
-                                <option>QUERETARO</option>
-                                <option>QUINTANA ROO</option>
-                                <option>SINALOA</option>
-                                <option>SAN LUIS POTOSI</option>
-                                <option>SONORA</option>
-                                <option>TAMAULIPAS</option>
-                                <option>TABASCO</option>
-                                <option>TLAXCALA</option>
-                                <option>VERACRUZ</option>
-                                <option>YUCATAN</option>
-                                <option>ZACATECAS</option>
-                              </select>
-                            </div>
-                          </div>
-                        </fieldset>
-                      </div>
-                      <div class="cell text-right">
-                        <button type="submit" class="button">Guardar</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div id="reporte" class="tabs-panel is-active">
+                <!--.tabs-panel#datos-facturacion
+                h4 Datos de facturación
+                form
+                  .grid-x.grid-padding-x
+                    .cell.large-6
+                      fieldset.fieldset
+                        legend Información
+                        .grid-x
+                            .cell
+                              label Nombre o Razón social
+                              input(type="text")
+                            .cell
+                              label R.F.C.
+                              input(type="text")
+                            .cell
+                              label Correo electrónico
+                              input(type="email")
+                    .cell.large-6
+                      fieldset.fieldset
+                        legend Domicilio fiscal
+                        .grid-x
+                            .cell.small-6
+                                label Calle
+                                input(type="text")
+                            .cell.small-3
+                                label Número exterior
+                                input(type="text")
+                            .cell.small-3
+                                label Número interior
+                                input(type="text")
+                
+                            .cell.small-6
+                                label Código postal
+                                input(type="text")
+                            .cell.small-6
+                                label Colonia
+                                input(type="text")
+                            .cell.small-6
+                                label Delegación o Municipio
+                                input(type="text")
+                            .cell.small-6
+                                label Ciudad
+                                input(type="text")
+                            .cell.small-6
+                                label Estado
+                                select
+                                    - var edos = ['AGUASCALIENTES','BAJA CALIFORNIA NORTE','BAJA CALIFORNIA SUR','COAHUILA','CHIHUAHUA','COLIMA','CAMPECHE','CHIAPAS','DISTRITO FEDERAL','DURANGO','GUERRERO','GUANAJUATO','HIDALGO','JALISCO','MICHOACAN','MORELOS','MEXICO','NAYARIT','NUEVO LEON','OAXACA','PUEBLA','QUERETARO','QUINTANA ROO','SINALOA','SAN LUIS POTOSI','SONORA','TAMAULIPAS','TABASCO','TLAXCALA','VERACRUZ','YUCATAN','ZACATECAS']
+                                    each val in edos
+                                        option=val
+                    .cell.text-right
+                      button(type="submit").button Guardar
+                
+                -->
+                <div id="reporte" class="tabs-panel">
                   <h4>Reporte por robo o extravío</h4>
                   <div class="grid-x">
                     <div class="cell large-6 large-offset-3">

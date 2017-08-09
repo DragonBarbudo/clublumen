@@ -23,6 +23,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/aviso-de-privacidad.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/aviso-de-privacidad.html",
+		"oF": 0
+		},
 	"\/aviso-de-privacidad.jade": {
 		"cOD": 1,
 		"ft": 512,
