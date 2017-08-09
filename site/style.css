@@ -173,6 +173,9 @@ footer.blue {
   padding: 10px 0;
   font-size: 0.8rem;
 }
+footer.blue a {
+  color: #0f1d41;
+}
 .menutopbar {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
