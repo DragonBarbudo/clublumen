@@ -481,14 +481,17 @@ mixin footer
         button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
         h2 Aviso de privacidad
         +avisodeprivacidad
+        .text-right: button(data-close="").button.hollow Cerrar ventana
     div.reveal.large(data-reveal)#reveal-terminos
         button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
         h2 Términos y condiciones
         +terminosycondiciones
+        .text-right: button(data-close="").button.hollow Cerrar ventana
     div.reveal(data-reveal)#reveal-faqs
         button(type="buton" data-close="").close-button: span(aria-hidden="true") &times;
         h2 Preguntas frecuentes
         +faqs
+        .text-right: button(data-close="").button.hollow Cerrar ventana
 
 
     footer
