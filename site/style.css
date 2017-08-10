@@ -98,14 +98,46 @@ a.logo {
   margin-bottom: 80px;
   margin-top: 80px;
 }
-.mainContainer h2.red {
-  background-color: #ED1C2F;
-  text-shadow: 2px 2px 0 #B90038;
-}
 .mainContainer h2 .icon {
   position: absolute;
   left: 20px;
   top: -60px;
+}
+.mainContainer h2.red {
+  background-color: #ED1C2F;
+  text-shadow: 2px 2px 0 #B90038;
+}
+.mainContainer h2.col1 {
+  background-color: #EB3C47;
+  text-shadow: 2px 2px 0 #a82b33;
+}
+.mainContainer h2.col2 {
+  background-color: #7C4597;
+  text-shadow: 2px 2px 0 #59316c;
+}
+.mainContainer h2.col3 {
+  background-color: #FDB942;
+  text-shadow: 2px 2px 0 #b5842f;
+}
+.mainContainer h2.col4 {
+  background-color: #33BCB1;
+  text-shadow: 2px 2px 0 #24867e;
+}
+.mainContainer h2.col5 {
+  background-color: #D42F8C;
+  text-shadow: 2px 2px 0 #972264;
+}
+.mainContainer h2.col6 {
+  background-color: #1EAFEC;
+  text-shadow: 2px 2px 0 #157da9;
+}
+.mainContainer h2.col7 {
+  background-color: #C1D540;
+  text-shadow: 2px 2px 0 #8a982e;
+}
+.mainContainer h2.col8 {
+  background-color: #254196;
+  text-shadow: 2px 2px 0 #1a2e6b;
 }
 .orbit-next,
 .orbit-previous {
@@ -170,8 +202,6 @@ footer.blue a {
 .callout {
   background: transparent !important;
   border: none;
-  border-top: 4px dotted #0053A1;
-  border-bottom: 8px dotted #00ADE0;
   position: relative;
 }
 .callout h4 {
