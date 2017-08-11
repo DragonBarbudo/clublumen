@@ -345,34 +345,37 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/site\/img\/slider-1.jpg": {
-		"ft": 16384,
-		"iS": 1330094,
+	"\/site\/img\/slider-1.png": {
+		"ft": 32768,
+		"iS": 273313,
 		"oA": 0,
-		"oAP": "\/site\/img\/slider-1.jpg",
+		"oAP": "\/site\/img\/slider-1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/site\/img\/slider-2.jpg": {
-		"ft": 16384,
-		"iS": 637570,
+	"\/site\/img\/slider-2.png": {
+		"ft": 32768,
+		"iS": 611439,
 		"oA": 0,
-		"oAP": "\/site\/img\/slider-2.jpg",
+		"oAP": "\/site\/img\/slider-2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/site\/img\/slider-3.jpg": {
-		"ft": 16384,
-		"iS": 798719,
+	"\/site\/img\/slider-3.png": {
+		"ft": 32768,
+		"iS": 573612,
 		"oA": 0,
-		"oAP": "\/site\/img\/slider-3.jpg",
+		"oAP": "\/site\/img\/slider-3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/site\/img\/tarjeta-certificado.jpg": {
