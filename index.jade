@@ -11,13 +11,11 @@ html(lang="en").no-js
 
 
 
-    .oribt(role="region" data-orbit)#inicio
-      ul.orbit-container 
-        button.orbit-previous &#9664;&#xFE0E;
-        button.orbit-next &#9654;&#xFE0E;
-        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-1.png").oribt-image
-        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-2.png").oribt-image
-        li.orbit-slide: figure.oribt-figure: img(src="site/img/slider-3.png").oribt-image
+    div.slick#inicio
+      div: img(src="site/img/slider-1.png")
+      div: img(src="site/img/slider-2.png")
+      div: img(src="site/img/slider-3.png")
+    
 
     section.mainContainer#iniciar-sesion
       .grid-container
@@ -124,12 +122,9 @@ html(lang="en").no-js
             a(href="#").banner: img(src="site/img/banner-2.jpg")
             a(href="#").banner: img(src="site/img/banner-3.jpg")
           .cell.large-8.text-center
-            .oribt(role="region" data-orbit)
-              ul.orbit-container 
-                button.orbit-previous &#9664;&#xFE0E;
-                button.orbit-next &#9654;&#xFE0E;
-                li.orbit-slide: figure.oribt-figure: img(src="site/img/promo_120713.jpg").oribt-image
-                li.orbit-slide: figure.oribt-figure: img(src="site/img/promo_120713.jpg").oribt-image
+            div.slick
+              div: img(src="site/img/promo_120713.jpg").oribt-image
+            
 
     section.mainContainer     
       h2.col5 Comprar puntos
